@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_48_dp"
+        android:background="@color/colorWhite">
+
+        <LinearLayout
+            android:id="@+id/llBack"
+            android:layout_width="@dimen/dimen_50_dp"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:gravity="start|center_vertical">
+
+            <ImageView
+                android:id="@+id/ivBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_12_dp"
+                android:layout_marginStart="@dimen/dimen_12_dp"
+                android:src="@drawable/ic_back"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/general_font_size"
+            android:textColor="@color/color_text_title"
+            android:textSize="@dimen/text_size_20"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_30_dp"
+        android:paddingLeft="@dimen/dimen_8_dp"
+        android:paddingRight="@dimen/dimen_80_dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/icon_left"
+            android:layout_width="@dimen/dimen_50_dp"
+            android:layout_height="@dimen/dimen_50_dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginRight="@dimen/dimen_5_dp"
+            android:src="@mipmap/icon_left"/>
+
+        <LinearLayout
+            android:id="@+id/ll_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/icon_left"
+            android:background="@drawable/message_left"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textMessage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:autoLink="web"
+                android:textColor="@color/color_msg_left"
+                android:textSize="@dimen/text_size_18"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.diting.pingxingren.custom.seekbar.BubbleSeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/dimen_30_dp"
+        android:layout_marginTop="@dimen/dimen_8_dp"
+        app:bsb_auto_adjust_section_mark="true"
+        app:bsb_hide_bubble="true"
+        app:bsb_max="4"
+        app:bsb_rtl="false"
+        app:bsb_track_color="#7d7d7d"
+        app:bsb_second_track_color="#00C4C2"
+        app:bsb_section_count="4"
+        app:bsb_show_section_mark="true"
+        app:bsb_thumb_text_size="@dimen/text_size_18"
+        app:bsb_touch_to_seek="true"/>
+</RelativeLayout>
+</LinearLayout>

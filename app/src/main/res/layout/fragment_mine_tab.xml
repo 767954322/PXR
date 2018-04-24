@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorGray">
+
+    <com.diting.pingxingren.custom.TitleBarView
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/title_bar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorGray"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/rel_RobotSetting"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_120_dp"
+                android:background="@mipmap/setting_bg">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/ivPhoto"
+                    android:layout_width="@dimen/dimen_60_dp"
+                    android:layout_height="@dimen/dimen_60_dp"
+                    android:layout_marginBottom="@dimen/dimen_10_dp"
+                    android:layout_marginLeft="@dimen/dimen_10_dp"
+                    android:layout_marginTop="@dimen/dimen_10_dp"
+                    android:src="@mipmap/icon_left" />
+
+                <TextView
+                    android:id="@+id/tvRobotName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/ivPhoto"
+                    android:layout_alignLeft="@+id/tvCompanyName"
+                    android:layout_alignStart="@+id/tvCompanyName"
+                    android:singleLine="true"
+                    android:text="小谛"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/text_size_16" />
+
+                <TextView
+                    android:id="@+id/tvCompanyName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/ivPhoto"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:layout_toRightOf="@+id/ivPhoto"
+                    android:singleLine="true"
+                    android:layout_toLeftOf="@+id/iv_mine_setting"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:text="北京谛听机器人有限公司"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/text_size_18" />
+                <ImageView
+                    android:id="@+id/iv_mine_setting"
+                    android:layout_width="@dimen/dimen_30_dp"
+                    android:layout_height="@dimen/dimen_30_dp"
+                    android:padding="@dimen/dimen_5_dp"
+                    android:layout_alignTop="@+id/tvCompanyName"
+                    android:src="@mipmap/icon_mine_setting"
+                    android:layout_alignParentRight="true"
+                   android:layout_marginRight="@dimen/dp_10"
+                    />
+                <LinearLayout
+                    android:id="@+id/layout_info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/tvRobotName"
+                    android:layout_below="@+id/ivPhoto"
+                    android:layout_centerHorizontal="true"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tvConcernCount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginRight="@dimen/dp_10"
+                        android:layout_marginTop="@dimen/dimen_8_dp"
+                        android:layout_weight="1"
+                        android:drawableLeft="@drawable/ic_fans"
+                        android:drawablePadding="@dimen/dimen_0_dp"
+                        android:gravity="right"
+                        android:text="粉丝数 : 0"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/text_size_14" />
+
+                    <TextView
+                        android:id="@+id/tvValueCount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginLeft="@dimen/dp_10"
+                        android:layout_marginTop="@dimen/dimen_8_dp"
+                        android:layout_weight="1"
+                        android:drawableLeft="@drawable/ic_value"
+                        android:text="价值 : 3000"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/text_size_14" />
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:id="@+id/two"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingTop="@dimen/dimen_10_dp">
+
+                <RelativeLayout
+                    android:id="@+id/rlRobotManage"
+                    style="@style/info_layout"
+                    android:visibility="gone">
+
+                    <TextView
+                        style="@style/item_info_tv"
+                        android:drawableLeft="@mipmap/icon_robot_setting"
+                        android:text="@string/robot_manage" />
+
+                    <ImageView style="@style/item_info_iv" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rlPromotion"
+                    style="@style/info_layout"
+                    android:layout_marginTop="@dimen/dimen_1_dp">
+
+                    <TextView
+                        style="@style/item_info_tv"
+                        android:drawableLeft="@drawable/ic_promotion"
+                        android:text="@string/tv_promotion" />
+
+                    <ImageView style="@style/item_info_iv" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rlGeneral"
+                    style="@style/info_layout"
+                    android:layout_marginTop="@dimen/dimen_1_dp">
+
+                    <TextView
+                        style="@style/item_info_tv"
+                        android:drawableLeft="@drawable/ic_general"
+                        android:text="@string/setting" />
+
+                    <Button
+                        android:id="@+id/btn_mail_red"
+                        android:layout_width="@dimen/dimen_50_dp"
+                        android:layout_height="@dimen/dimen_20_dp"
+                        android:layout_marginRight="@dimen/dimen_10_dp"
+                        android:layout_toLeftOf="@id/iv_mail"
+                        android:layout_centerVertical="true"
+                        android:visibility="invisible" />
+
+                    <ImageView
+                        android:id="@+id/iv_mail"
+                        style="@style/item_info_iv" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rlChildRobot"
+                    style="@style/info_layout"
+                    android:layout_marginTop="@dimen/dimen_1_dp">
+
+                    <TextView
+                        style="@style/item_info_tv"
+                        android:drawableLeft="@drawable/ic_child_robot"
+                        android:text="@string/child_robot" />
+
+                    <ImageView style="@style/item_info_iv" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rlMy_collect"
+                    style="@style/info_layout"
+
+                    android:layout_marginTop="@dimen/dimen_1_dp">
+
+                    <TextView
+                        style="@style/item_info_tv"
+                        android:drawableLeft="@mipmap/icon_my_collect"
+                        android:text="@string/my_collect" />
+
+                    <ImageView style="@style/item_info_iv" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rlMy_Lucky"
+                    style="@style/info_layout"
+
+                    android:layout_marginTop="@dimen/dimen_1_dp">
+
+                    <TextView
+                        style="@style/item_info_tv"
+                        android:drawableLeft="@mipmap/icon_my_lucky"
+                        android:text="@string/my_lucky" />
+                    <Button
+                        android:id="@+id/btn_lucky_red"
+                        android:layout_width="@dimen/dimen_50_dp"
+                        android:layout_height="@dimen/dimen_20_dp"
+                        android:layout_marginRight="@dimen/dimen_10_dp"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@id/iv_lucky"
+                        android:visibility="invisible" />
+                    <ImageView
+                        android:id="@+id/iv_lucky"
+                        style="@style/item_info_iv" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rel_bussiness"
+                    style="@style/info_layout"
+                    android:layout_marginTop="@dimen/dimen_1_dp">
+
+                    <TextView
+                        style="@style/item_info_tv"
+                        android:drawableLeft="@mipmap/icon_business_cooperation"
+                        android:text="@string/Business_cooperation" />
+
+                    <ImageView
+                        android:id="@+id/iv_bussiness"
+                        style="@style/item_info_iv" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/lay_bussiness_open"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/tv_bussiness_phone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dimen_20_dp"
+                        android:layout_marginTop="@dimen/dimen_10_dp"
+                        android:drawableLeft="@mipmap/icon_mobile"
+                        android:drawablePadding="@dimen/dp_10"
+                        android:text="18618363759" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dimen_20_dp"
+                        android:layout_marginTop="@dimen/dimen_10_dp"
+                        android:drawableLeft="@mipmap/icon_bussiness_mail"
+                        android:drawablePadding="@dimen/dp_10"
+                        android:text="lianghongmeng@dtrobo.com" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

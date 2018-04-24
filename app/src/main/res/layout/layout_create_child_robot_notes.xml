@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/popupwin_bg">
+
+        <TextView
+            style="@style/CommonText.Title"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_40_dp"
+            android:text="@string/create_robot_notes"/>
+
+        <View
+            style="@style/LineHorizontal"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/notesRecycler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimen_16_dp"/>
+
+        <View
+            style="@style/LineHorizontal"/>
+
+        <Button
+            android:id="@+id/define"
+            style="@style/CommonButton"
+            android:layout_height="@dimen/dimen_40_dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dimen_16_dp"
+            android:layout_marginBottom="@dimen/dimen_10_dp"
+            android:background="@drawable/send_btn_enable"
+            android:textSize="@dimen/text_size_18"
+            android:text="@string/submit"/>
+
+        <!--<TextView
+            style="@style/CommonText.Title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_16_dp"
+            android:text="@string/create_robot_notes"/>-->
+    </LinearLayout>
+</layout>

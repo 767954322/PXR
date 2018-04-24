@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="blue">#499BF7</color>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorLightBlue">#02c9f9</color>
+    <color name="colorWhite">@android:color/white</color>
+    <color name="colorRed">#FF0000</color>
+    <color name="transparent">#00000000</color>
+    <color name="colorButtonDisable">#999999</color>
+    <color name="devide_line">#dcdcdc</color>
+    <color name="color_text_deep">#969696</color>
+    <color name="color_text_nomal">#333333</color>
+    <color name="color_text_light">#666666</color>
+    <color name="color_tip">#cccccc</color>
+    <color name="color_text_title">#646464</color>
+    <color name="color_light_green">#00c4c2</color>
+    <color name="color_stroke">#e6e6e6</color>
+    <color name="color_input">#fbfbfb</color>
+    <color name="color_msg_left">#505050</color>
+    <color name="color_search_hint">#c8c8c8</color>
+    <color name="color_btn_disable">#f0f0f0</color>
+    <color name="call_voice_bg_color">#1E1E1E</color>
+    <color name="color_play_bg">#2dcf9e</color>
+    <color name="color_light_yellow">#fff899</color>
+    <color name="color_btn_pressed">#00bfbd</color>
+
+    <color name="colorGray">#F8F8F8</color>
+    <color name="common_title_text_color">#646464</color>
+    <color name="common_button_text_color">#727272</color>
+    <color name="commonColor">#00C4C2</color>
+    <color name="colorInputLayout">#FBFBFB</color>
+    <color name="lineColor">#BCBCBC</color>
+    <color name="edit_bg">#F5F5F5</color>
+    <color name="half_translation">#50000000</color>
+    <color name="news_title_line_color">#A9A7A7</color>
+</resources>

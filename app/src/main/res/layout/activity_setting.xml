@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <data>
+
+        <variable
+            name="clickListener"
+            type="com.diting.pingxingren.listener.ClickListener" />
+    </data>
+
+    <LinearLayout
+        android:id="@+id/ll_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorGray"
+        android:orientation="vertical">
+
+        <com.diting.pingxingren.custom.TitleBarView
+            android:id="@+id/title_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true">
+        </com.diting.pingxingren.custom.TitleBarView>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@mipmap/banner">
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="1dp"
+                    android:background="@color/colorWhite"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="主人头像"
+                        android:textColor="@color/color_text_title"
+                        android:textSize="@dimen/text_size_22" />
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:onClick="@{clickListener::onClick}"
+                        android:id="@+id/iv_photo"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_alignParentRight="true"
+                        android:src="@mipmap/default_head" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/colorWhite">
+
+                    <TextView
+                        android:id="@+id/tv_company_name"
+                        style="@style/tv_setting_common"
+                        android:drawableLeft="@mipmap/icon_company_name"
+                        android:text="@string/company_name" />
+
+                    <EditText
+                        android:id="@+id/et_company_name"
+                        style="@style/et_setting_common"
+                        android:layout_toRightOf="@+id/tv_company_name"
+                        android:hint="@string/et_company_hint"
+                        android:maxLength="16"
+                        android:maxLines="1" />
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="1dp"
+                    android:background="@color/colorWhite">
+
+                    <TextView
+                        android:id="@+id/tv_robot_name"
+                        style="@style/tv_setting_common"
+                        android:drawableLeft="@mipmap/icon_robot_setting"
+                        android:text="@string/robot_name" />
+
+                    <EditText
+                        android:id="@+id/et_robot_name"
+                        style="@style/et_setting_common"
+                        android:layout_toRightOf="@+id/tv_robot_name"
+                        android:hint="@string/et_robot_hint"
+                        android:maxLength="12" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/colorWhite">
+
+                    <TextView
+                        style="@style/tv_setting_common"
+                        android:drawableLeft="@mipmap/icon_industry"
+                        android:drawablePadding="8dp"
+                        android:text="@string/industry" />
+
+                    <TextView
+                        android:onClick="@{clickListener::onClick}"
+                        android:id="@+id/tv_industry"
+                        style="@style/et_setting_common"
+                        android:gravity="right"
+                        android:text="请选择行业"
+                        android:textColor="@color/color_light_green" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp">
+
+
+                <TextView
+                    style="@style/tv_setting_common"
+                    android:layout_height="40dp"
+                    android:background="@color/transparent"
+                    android:drawableLeft="@mipmap/icon_robot_profile"
+                    android:drawablePadding="@dimen/dimen_8_dp"
+                    android:drawableStart="@mipmap/icon_robot_profile"
+                    android:text="@string/tv_welcome"/>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="10dp"
+                        android:id="@+id/iv_file"
+                        android:layout_alignParentRight="true"
+                        android:src="@drawable/welcome_file"/>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="10dp"
+                        android:id="@+id/iv_pic"
+                        android:layout_toLeftOf="@+id/iv_audio"
+                        android:src="@drawable/welcome_pic"/>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="10dp"
+                        android:id="@+id/iv_audio"
+                        android:layout_toLeftOf="@+id/iv_file"
+                        android:src="@drawable/welcome_audio"/>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:id="@+id/iv_text"
+                        android:layout_marginRight="10dp"
+                        android:layout_toLeftOf="@+id/iv_pic"
+                        android:src="@drawable/welcome_text"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorWhite">
+
+                    <com.diting.pingxingren.custom.MultiEditInputView
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/etProfile"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorWhite"
+                        android:padding="@dimen/dimen_5_dp"
+                        app:contentHeight="@dimen/dimen_80_dp"
+                        app:hintText="@string/hint_profile"
+                        app:maxCount="30"/>
+
+                    <ImageView
+                        android:id="@+id/iv_content"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:scaleType="centerCrop"
+                        android:background="@color/call_voice_bg_color"
+                        android:visibility="gone" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+
+    </LinearLayout>
+</layout>

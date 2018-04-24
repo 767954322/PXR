@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/ll_main"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <SearchView
+        android:id="@+id/search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="@dimen/dimen_10_dp"
+        android:layout_marginLeft="@dimen/dimen_20_dp"
+        android:layout_marginRight="@dimen/dimen_20_dp"
+        android:layout_marginTop="@dimen/dimen_10_dp"
+        android:background="@color/colorWhite"
+        android:iconifiedByDefault="false"
+        android:inputType="textFilter"
+        android:queryHint="@string/search_hint"
+        android:visibility="gone">
+    </SearchView>
+
+    <LinearLayout
+        android:id="@+id/ll_no_fans"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_20_dp"
+            android:src="@mipmap/icon_no_knowledge"
+            >
+        </ImageView>
+
+        <TextView
+            android:id="@+id/tv_prompt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_20_dp"
+            android:text="@string/tv_no_fans"/>
+
+        <Button
+            android:id="@+id/btn_qrcode"
+            style="@style/btn_login"
+            android:layout_marginLeft="@dimen/dimen_60_dp"
+            android:layout_marginRight="@dimen/dimen_60_dp"
+            android:layout_marginTop="@dimen/dimen_20_dp"
+            android:text="推广机器人"/>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lv_search"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@color/colorGray"
+        android:dividerHeight="1px"
+        android:listSelector="@color/transparent"
+        android:scrollbars="none"
+        android:visibility="gone">
+    </ListView>
+
+    <FrameLayout
+        android:id="@+id/fl_rank_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.diting.pingxingren.custom.LoadListView
+            android:id="@+id/lv_concern"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@color/colorGray"
+            android:dividerHeight="1px"
+            android:listSelector="@color/transparent"
+            android:scrollbars="none">
+        </com.diting.pingxingren.custom.LoadListView>
+    </FrameLayout>
+</LinearLayout>

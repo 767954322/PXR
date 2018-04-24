@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:id="@+id/iv"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bt_go_in"
+        android:textSize="@dimen/text_size_16"
+        android:textColor="@color/color_light_green"
+        android:background="@drawable/guide_bt_selector"
+        android:paddingLeft="@dimen/dimen_30_dp"
+        android:paddingRight="@dimen/dimen_30_dp"
+        android:paddingTop="@dimen/dimen_10_dp"
+        android:paddingBottom="@dimen/dimen_10_dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/dimen_50_dp"
+        android:text="立即进入"/>
+
+</RelativeLayout>

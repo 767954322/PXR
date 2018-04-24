@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        style="@style/CommonLayout">
+
+        <LinearLayout
+            android:id="@+id/llSearchLayout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_50_dp"
+            android:layout_margin="@dimen/dimen_12_dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <com.diting.pingxingren.custom.ClearEditText
+                android:id="@+id/search"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_35_dp"
+                android:layout_weight="1"
+                android:background="@color/colorWhite"
+                android:drawableLeft="@mipmap/icon_search"
+                android:drawableStart="@mipmap/icon_search"
+                android:gravity="center_vertical"
+                android:hint="@string/search_hint"
+                android:paddingLeft="@dimen/dimen_10_dp"
+                android:paddingRight="@dimen/dimen_10_dp"
+                android:textColor="@color/color_text_deep"
+                android:textColorHint="@color/color_search_hint"
+                android:textSize="@dimen/text_size_16"/>
+
+            <Button
+                android:id="@+id/btSearch"
+                style="@style/CommonButton"
+                android:layout_height="@dimen/dimen_35_dp"
+                android:layout_weight="0.3"
+                android:background="@drawable/send_btn_enable"
+                android:text="@string/search"/>
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/robotRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/llSearchLayout"
+            android:layout_marginLeft="@dimen/dimen_12_dp"
+            android:layout_marginRight="@dimen/dimen_12_dp"/>
+
+        <LinearLayout
+            android:id="@+id/llNoRobot"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/llSearchLayout"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/icon_no_knowledge"/>
+
+            <TextView
+                android:id="@+id/tvPrompt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_20_dp"
+                android:text="@string/tv_no_robot"/>
+        </LinearLayout>
+    </RelativeLayout>
+</layout>

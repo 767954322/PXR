@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:id="@+id/ll_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhite"
+        android:orientation="vertical">
+
+        <com.diting.pingxingren.custom.TitleBarView
+            android:id="@+id/title_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </com.diting.pingxingren.custom.TitleBarView>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/tv_photo"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_180_dp"
+                    android:scaleType="centerCrop"/>
+
+                <TextView
+                    android:id="@+id/tv_name"
+                    style="@style/TextBig"
+                    android:layout_marginLeft="@dimen/dimen_10_dp"
+                    android:layout_marginTop="@dimen/dimen_10_dp"
+                    android:text="海底捞火锅"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_10_dp"
+                    android:layout_marginTop="@dimen/dimen_5_dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_distance"
+                        style="@style/TextMiddle"
+                        android:text="1.8km"/>
+
+                    <View
+                        style="@style/devide_line"
+                        android:layout_width="@dimen/dimen_1_dp"
+                        android:layout_height="@dimen/dimen_18_dp"
+                        android:layout_marginLeft="@dimen/dimen_10_dp"/>
+
+                    <TextView
+                        android:id="@+id/tv_address"
+                        style="@style/TextMiddle"
+                        android:layout_marginLeft="@dimen/dimen_10_dp"
+                        android:text="比目鱼创业园谛听机器人"/>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_20_dp"
+                    android:layout_marginTop="@dimen/dimen_5_dp"
+                    android:background="@color/colorGray"/>
+
+                <TextView
+                    android:id="@+id/tv_phone"
+                    style="@style/TextMiddle"
+                    android:background="@color/colorWhite"
+                    android:drawableLeft="@mipmap/icon_phone"
+                    android:drawablePadding="@dimen/dimen_20_dp"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/dimen_10_dp"
+                    android:text="13161202845"
+                    android:textSize="@dimen/text_size_18"/>
+
+                <View
+                    android:id="@+id/devide"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_20_dp"
+                    android:background="@color/colorGray"/>
+
+                <TextView
+                    style="@style/TextBig"
+                    android:padding="@dimen/dimen_10_dp"
+                    android:text="商家信息"/>
+
+                <View
+                    style="@style/devide_line"
+                    android:layout_marginLeft="@dimen/dimen_10_dp"
+                    android:layout_marginRight="@dimen/dimen_10_dp"/>
+
+                <TextView
+                    style="@style/TextMiddle"
+                    android:layout_marginLeft="@dimen/dimen_10_dp"
+                    android:layout_marginTop="@dimen/dimen_10_dp"
+                    android:text="支付方式 :  微信/支付宝/现金/刷卡"
+                    android:textColor="@color/color_text_nomal"/>
+
+                <TextView
+                    style="@style/TextMiddle"
+                    android:layout_marginLeft="@dimen/dimen_10_dp"
+                    android:layout_marginTop="@dimen/dimen_10_dp"
+                    android:text="店铺环境 :  wifi/空调/停车场"
+                    android:textColor="@color/color_text_nomal"/>
+
+                <TextView
+                    style="@style/TextMiddle"
+                    android:layout_marginLeft="@dimen/dimen_10_dp"
+                    android:layout_marginTop="@dimen/dimen_10_dp"
+                    android:text="营业时间 :  9:00 - 23:00"
+                    android:textColor="@color/color_text_nomal"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_20_dp"
+                    android:background="@color/colorGray"/>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/dimen_10_dp">
+
+                    <TextView
+                        android:id="@+id/tv_nayword"
+                        style="@style/TextBig"
+                        android:layout_centerHorizontal="true"
+                        android:text="如果你吃的不胖，你没辜负身材，如果你吃的胖，你没辜负美食，爱吃的你怎么都是对的！"/>
+
+                    <TextView
+                        android:id="@+id/tv_diting"
+                        style="@style/TextBig"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@+id/tv_nayword"
+                        android:layout_marginTop="10dp"
+                        android:text="谛听美食箴言"/>
+                </RelativeLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</layout>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:id="@+id/ll_main"
+        style="@style/CommonLayout">
+
+        <com.diting.pingxingren.custom.TitleBarView
+            android:id="@+id/title_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true">
+        </com.diting.pingxingren.custom.TitleBarView>
+
+        <View
+            style="@style/devide_line"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_40_dp"
+            android:paddingBottom="@dimen/dimen_5_dp"
+            android:paddingLeft="@dimen/dimen_10_dp"
+            android:paddingRight="@dimen/dimen_10_dp"
+            android:paddingTop="@dimen/dimen_5_dp">
+
+            <TextView
+                android:id="@+id/tv_select"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:background="@drawable/send_btn_enable"
+                android:gravity="center"
+                android:paddingLeft="@dimen/dimen_10_dp"
+                android:paddingRight="@dimen/dimen_10_dp"
+                android:text="选择"
+                android:textColor="@color/colorWhite"/>
+
+            <TextView
+                android:id="@+id/tv_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dimen_10_dp"
+                android:layout_toRightOf="@+id/tv_select"
+                android:background="@drawable/send_btn_enable"
+                android:gravity="center"
+                android:paddingLeft="@dimen/dimen_10_dp"
+                android:paddingRight="@dimen/dimen_10_dp"
+                android:text="取消"
+                android:textColor="@color/colorWhite"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/tv_insert"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/send_btn_enable"
+                android:gravity="center"
+                android:paddingLeft="@dimen/dimen_10_dp"
+                android:paddingRight="@dimen/dimen_10_dp"
+                android:text="导入"
+                android:textColor="@color/colorWhite"/>
+        </RelativeLayout>
+
+        <View
+            style="@style/devide_line"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="@dimen/dimen_30_dp" />
+
+            <com.diting.pingxingren.custom.IndexBar
+                android:id="@+id/index_bar"
+                android:layout_width="@dimen/dimen_200_dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:background="@color/transparent">
+
+                <com.diting.pingxingren.custom.SideBar
+                    android:id="@+id/side_bar"
+                    android:layout_width="@dimen/dimen_30_dp"
+                    android:layout_height="match_parent"/>
+            </com.diting.pingxingren.custom.IndexBar>
+        </RelativeLayout>
+    </LinearLayout>
+
+</layout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/layout_remind"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/dimen_5_dp"
+                android:paddingLeft="@dimen/dimen_8_dp"
+                android:paddingRight="@dimen/dimen_80_dp"
+                android:paddingTop="@dimen/dimen_8_dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/icon_left"
+        android:layout_width="@dimen/dimen_50_dp"
+        android:layout_height="@dimen/dimen_50_dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="@dimen/dimen_5_dp"
+        android:src="@mipmap/icon_left"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/icon_left"
+        android:background="@drawable/message_left"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/tv_set_success"
+            android:textColor="@color/color_msg_left"
+            android:textSize="@dimen/text_size_18"/>
+
+        <TextView
+            android:id="@+id/tv_remind_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dimen_10_dp"
+            android:layout_marginTop="@dimen/dimen_10_dp"
+            android:lineSpacingMultiplier="1.2"
+            android:textColor="@color/color_msg_left"
+            android:textSize="@dimen/text_size_18"/>
+
+        <TextView
+            android:id="@+id/tv_remind_check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/tv_remind_check"
+            android:textColor="@color/color_light_green"
+            android:textSize="@dimen/text_size_18"/>
+    </LinearLayout>
+</RelativeLayout>

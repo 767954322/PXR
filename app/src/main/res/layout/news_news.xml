@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:app= "http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/ll_layout"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+
+    <com.diting.pingxingren.news.custom.NewsTitleBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/title_bar"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/iv_load_error"
+            android:src="@mipmap/ic_launcher"
+            android:layout_centerInParent="true"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_load_error"
+            android:layout_centerHorizontal="true"
+            android:text="@string/news_error_text"
+            android:layout_marginTop="@dimen/dimen_10_dp"/>
+
+        <WebView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/web_view"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            android:id="@+id/rl_bottom"
+            android:layout_alignParentBottom="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#aaffffff"
+                android:layout_alignParentBottom="true">
+                <com.diting.pingxingren.custom.seekbar.BubbleSeekBar
+                    android:id="@+id/seekBar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dimen_30_dp"
+                    app:bsb_auto_adjust_section_mark="true"
+                    app:bsb_hide_bubble="true"
+                    app:bsb_max="4"
+                    app:bsb_rtl="false"
+                    app:bsb_track_color="#7d7d7d"
+                    app:bsb_second_track_color="#00C4C2"
+                    app:bsb_section_count="4"
+                    app:bsb_show_section_mark="true"
+                    app:bsb_thumb_text_size="@dimen/text_size_18"
+                    app:bsb_touch_to_seek="true"/>
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

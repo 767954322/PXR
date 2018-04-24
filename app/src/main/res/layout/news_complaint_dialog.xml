@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/dimen_10_dp"
+    android:paddingRight="@dimen/dimen_10_dp"
+    android:paddingLeft="@dimen/dimen_10_dp"
+    android:orientation="vertical">
+
+    <!--投诉对话框布局-->
+    <CheckBox
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/color_text_nomal"
+        android:textSize="@dimen/text_size_14"
+        android:id="@+id/cb_one"
+        android:text="@string/advertisement"/>
+    <CheckBox
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/color_text_nomal"
+        android:textSize="@dimen/text_size_14"
+        android:id="@+id/cb_two"
+        android:text="@string/title_party"/>
+    <CheckBox
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/color_text_nomal"
+        android:textSize="@dimen/text_size_14"
+        android:id="@+id/cb_three"
+        android:text="@string/poor_content_quality"/>
+    <CheckBox
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/color_text_nomal"
+        android:textSize="@dimen/text_size_14"
+        android:id="@+id/cb_four"
+        android:text="@string/vulgar_pornography"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color_text_nomal"
+            android:textSize="@dimen/text_size_14"
+            android:text="@string/other"
+            android:id="@+id/cb_other"/>
+        <EditText
+            android:layout_width="150dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:id="@+id/et_content"
+            android:background="@null"
+            android:layout_marginLeft="@dimen/dimen_20_dp"
+            android:textSize="@dimen/text_size_14"
+            android:textColor="@color/color_text_nomal"
+            android:enabled="false"
+            android:hint="@string/please_input_other_cause"/>
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bt_submit"
+        android:textSize="@dimen/text_size_16"
+        android:textColor="@color/colorLightBlue"
+        android:text="@string/commit"
+        android:background="@null"/>
+
+</LinearLayout>

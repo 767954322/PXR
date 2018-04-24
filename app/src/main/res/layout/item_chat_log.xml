@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_marginBottom="@dimen/dimen_10_dp"
+    android:layout_marginTop="@dimen/dimen_10_dp"
+    android:layout_height="wrap_content">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/icon_left"
+        android:layout_width="@dimen/dimen_50_dp"
+        android:layout_height="@dimen/dimen_50_dp"
+        android:layout_marginTop="@dimen/dimen_10_dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="@dimen/dimen_5_dp"
+        android:layout_marginLeft="@dimen/dimen_10_dp"
+        android:src="@mipmap/icon_left" />
+
+    <LinearLayout
+        android:id="@+id/ll_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/icon_left"     android:layout_marginTop="@dimen/dimen_10_dp"
+        android:background="@drawable/message_left"
+        android:layout_marginRight="@dimen/dimen_15_dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/left_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:autoLink="web"
+            android:textColor="@color/color_msg_left"
+            android:textSize="@dimen/text_size_18" />
+
+
+    </LinearLayout>
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/icon_right"
+        android:layout_width="@dimen/dimen_50_dp"
+        android:layout_height="@dimen/dimen_50_dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/ll_message"
+        android:layout_marginLeft="@dimen/dimen_5_dp"
+        android:layout_marginTop="@dimen/dimen_5_dp"
+        android:layout_marginRight="@dimen/dimen_10_dp"
+        android:src="@mipmap/icon_right" />
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_message"
+        android:layout_marginTop="@dimen/dimen_5_dp"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_toLeftOf="@id/icon_right">
+
+        <TextView
+            android:id="@+id/right_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:autoLink="web"
+
+            android:background="@drawable/message_right"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/text_size_18" />
+
+
+    </FrameLayout>
+
+
+</RelativeLayout>

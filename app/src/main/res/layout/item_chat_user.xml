@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorWhite"
+    android:orientation="horizontal">
+
+    <View
+        android:id="@+id/devide_line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_10_dp"
+
+        android:background="#fafafa" />
+
+    <LinearLayout
+        android:id="@+id/ll_concern"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/devide_line"
+        android:layout_centerVertical="true"
+        android:orientation="vertical"
+        android:padding="@dimen/dimen_10_dp">
+
+        <TextView
+            android:id="@+id/tv_chat_log"
+
+            style="@style/tv_18dp_lightgreen"
+            android:layout_gravity="center"
+            android:drawablePadding="@dimen/dimen_2_dp"
+            android:drawableTop="@mipmap/icon_chat_log"
+            android:text="查看消息" />
+
+        <View
+            style="@style/devide_line"
+            android:layout_width="@dimen/dimen_50_dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/dimen_10_dp" />
+
+        <TextView
+            android:id="@+id/tv_robot"
+
+            style="@style/tv_18dp_lightgreen"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/dimen_10_dp"
+            android:drawablePadding="@dimen/dimen_2_dp"
+            android:drawableTop="@drawable/icon_robot_selector"
+            android:text="机器人" />
+    </LinearLayout>
+
+
+    <RelativeLayout
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toLeftOf="@id/ll_concern"
+
+        android:layout_below="@+id/devide_line">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/iv_photo"
+            style="@style/Image_header"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/icon_left" />
+
+
+        <LinearLayout
+            android:id="@+id/layout_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/dimen_10_dp"
+            android:layout_marginLeft="@dimen/dimen_10_dp"
+
+            android:layout_toRightOf="@id/iv_photo"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_user_name"
+                style="@style/tv_18dp_text_title"
+                android:singleLine="true"
+                android:text="用户姓名" />
+
+            <TextView
+                android:id="@+id/tv_user_type"
+                style="@style/tv_18dp_text_deep"
+                android:layout_marginTop="@dimen/dimen_5_dp"
+                android:text="用户类别" />
+
+            <TextView
+                android:id="@+id/tv_count"
+                style="@style/tv_18dp_text_deep"
+                android:layout_marginTop="@dimen/dimen_5_dp"
+                android:text="对话总次数" />
+
+            <TextView
+                android:id="@+id/tv_time"
+                style="@style/tv_18dp_text_deep"
+                android:layout_marginTop="@dimen/dimen_5_dp"
+                android:text="时间" />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</RelativeLayout>

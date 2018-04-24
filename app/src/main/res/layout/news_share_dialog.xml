@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rl_layout"
+    android:background="#00000000">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/bg_color"
+        android:layout_alignParentBottom="true">
+
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dimen_120_dp"
+            android:overScrollMode="never"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/frined_circle"
+                    android:textSize="@dimen/text_size_14"
+                    android:textColor="@color/color_text_nomal"
+                    android:drawableTop="@drawable/ic_back"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/dimen_40_dp"
+                    android:text="@string/friend_circle"/>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/wechat_friend"
+                    android:textSize="@dimen/text_size_14"
+                    android:textColor="@color/color_text_nomal"
+                    android:drawableTop="@drawable/ic_back"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/dimen_40_dp"
+                    android:text="@string/wechat_friend"/>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/qq_zone"
+                    android:textSize="@dimen/text_size_14"
+                    android:textColor="@color/color_text_nomal"
+                    android:drawableTop="@drawable/ic_back"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/dimen_40_dp"
+                    android:text="@string/qq_zone"/>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/qq_friend"
+                    android:textSize="@dimen/text_size_14"
+                    android:textColor="@color/color_text_nomal"
+                    android:drawableTop="@drawable/ic_back"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/dimen_40_dp"
+                    android:text="@string/qq_friend"/>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/copy_net"
+                    android:textSize="@dimen/text_size_14"
+                    android:textColor="@color/color_text_nomal"
+                    android:drawableTop="@drawable/ic_back"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/dimen_40_dp"
+                    android:layout_marginRight="@dimen/dimen_40_dp"
+                    android:text="@string/copy_link"/>
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_1_dp"
+            android:background="@color/lineColor"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_50_dp"
+            android:id="@+id/bt_cancel"
+            android:text="@string/tv_cancel"
+            android:textColor="@color/color_text_nomal"
+            android:textSize="@dimen/text_size_18"
+            android:background="@null"/>
+    </LinearLayout>
+
+
+
+</RelativeLayout>

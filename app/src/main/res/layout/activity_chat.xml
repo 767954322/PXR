@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/colorGray"
+              android:orientation="vertical">
+
+    <com.diting.pingxingren.custom.TitleBarView
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </com.diting.pingxingren.custom.TitleBarView>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/id_swipe_ly"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_0_dp"
+        android:layout_marginTop="@dimen/dimen_10_dp"
+        android:layout_weight="1">
+
+        <ListView
+            android:id="@+id/msg_list_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="#0000"
+            android:dividerHeight="@dimen/dimen_20_dp"
+            android:listSelector="@color/transparent"
+            android:transcriptMode="normal">
+        </ListView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+
+        <EditText
+            android:id="@+id/input_text"
+            android:layout_width="@dimen/dimen_0_dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="@dimen/dimen_20_dp"
+            android:layout_weight="1"
+            android:maxLength="60"
+            android:paddingBottom="@dimen/dimen_10_dp"
+            android:textColor="@color/color_text_deep"
+            android:textSize="@dimen/text_size_16"/>
+
+        <Button
+            android:id="@+id/send"
+            android:layout_width="@dimen/dimen_60_dp"
+            android:layout_height="@dimen/dimen_35_dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/dimen_10_dp"
+            android:layout_marginRight="@dimen/dimen_10_dp"
+            android:layout_marginTop="@dimen/dimen_10_dp"
+            android:background="@drawable/send_btn_disable"
+            android:enabled="false"
+            android:text="@string/button_send"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/text_size_16"/>
+    </LinearLayout>
+</LinearLayout>

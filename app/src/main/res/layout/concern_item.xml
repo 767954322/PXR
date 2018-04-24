@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_90_dp"
+                android:background="@color/colorWhite"
+                android:paddingLeft="@dimen/dimen_10_dp"
+                android:paddingRight="@dimen/dimen_35_dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/iv_photo"
+        android:layout_width="@dimen/dimen_60_dp"
+        android:layout_height="@dimen/dimen_60_dp"
+        android:layout_centerVertical="true"
+        android:src="@mipmap/icon_left"/>
+
+    <LinearLayout
+        android:id="@+id/layout_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/dimen_10_dp"
+        android:layout_marginRight="@dimen/dimen_5_dp"
+        android:layout_toLeftOf="@+id/ll_concern"
+        android:layout_toRightOf="@+id/iv_photo"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_robot_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="学吧"
+                android:textColor="@color/color_text_title"
+                android:textSize="@dimen/text_size_18"/>
+
+            <TextView
+                android:id="@+id/tv_remark"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/dimen_20_dp"
+                android:background="@drawable/searchview_bg"
+                android:gravity="center"
+                android:paddingLeft="@dimen/dimen_5_dp"
+                android:paddingRight="@dimen/dimen_5_dp"
+                android:text="备注"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/text_size_14"
+                android:visibility="gone"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_fans_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_5_dp"
+            android:text="@string/fans"
+            android:textColor="@color/color_text_deep"
+            android:textSize="@dimen/text_size_14"/>
+
+        <TextView
+            android:id="@+id/tv_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_5_dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="@color/color_text_deep"
+            android:textSize="@dimen/text_size_18"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_concern"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/iv_concern"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@mipmap/icon_add_concern"/>
+
+        <TextView
+            android:id="@+id/btn_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_5_dp"
+            android:gravity="center"
+            android:text="加关注"
+            android:textColor="@color/color_light_green"
+            android:textSize="@dimen/text_size_14"/>
+    </LinearLayout>
+</RelativeLayout>

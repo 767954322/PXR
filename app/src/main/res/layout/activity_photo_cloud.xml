@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:gravity="center_horizontal"
+              android:orientation="vertical">
+
+    <com.diting.pingxingren.custom.TitleBarView
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </com.diting.pingxingren.custom.TitleBarView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_50_dp"
+        android:orientation="horizontal"
+        android:padding="@dimen/dimen_10_dp">
+
+        <LinearLayout
+            android:id="@+id/ll_new_photo"
+            android:layout_width="@dimen/dimen_0_dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/color_light_green"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@mipmap/icon_add"
+                android:drawablePadding="@dimen/dimen_5_dp"
+                android:gravity="center"
+                android:text="新建相册"
+                android:textColor="@color/colorWhite"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_upload"
+            android:layout_width="@dimen/dimen_0_dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/dimen_10_dp"
+            android:layout_weight="1"
+            android:background="@color/color_light_green"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@mipmap/icon_add"
+                android:drawablePadding="@dimen/dimen_5_dp"
+                android:gravity="center"
+                android:text="上传"
+                android:textColor="@color/colorWhite"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_upload_list"
+            android:layout_width="@dimen/dimen_0_dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/dimen_10_dp"
+            android:layout_weight="1"
+            android:background="@color/color_light_green"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@mipmap/icon_add"
+                android:drawablePadding="@dimen/dimen_5_dp"
+                android:gravity="center"
+                android:text="传输列表"
+                android:textColor="@color/colorWhite"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_0_dp"
+        android:layout_weight="1">
+    </android.support.v7.widget.RecyclerView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_50_dp"
+        android:background="@color/colorWhite"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="@dimen/dimen_0_dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="全选"/>
+
+        <View
+            android:layout_width="@dimen/dimen_1_dp"
+            android:layout_height="@dimen/dimen_30_dp"
+            android:background="@color/devide_line"/>
+
+        <TextView
+            android:layout_width="@dimen/dimen_0_dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="更多"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.diting.pingxingren.news.custom.NewsTitleBar
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_48_dp"
+        android:id="@+id/title_bar"/>
+
+    <FrameLayout
+        android:id="@+id/fragment_home"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_0_dp"
+        android:layout_weight="1" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_50_dp"
+        android:id="@+id/radio_group"
+        android:paddingLeft="@dimen/dimen_30_dp"
+        android:paddingRight="@dimen/dimen_30_dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_comprehensive"
+            android:text="@string/comprehensive"
+            android:paddingTop="@dimen/dimen_5_dp"
+            style="@style/tab_menu_item"
+            android:checked="true"/>
+        <RadioButton
+            android:id="@+id/rb_nation_in"
+            style="@style/tab_menu_item"
+            android:paddingTop="@dimen/dimen_5_dp"
+            android:text="@string/nation_in"/>
+        <RadioButton
+            android:id="@+id/rb_international"
+            style="@style/tab_menu_item"
+            android:paddingTop="@dimen/dimen_5_dp"
+            android:text="@string/international"/>
+        <RadioButton
+            android:id="@+id/rb_sociology"
+            style="@style/tab_menu_item"
+            android:paddingTop="@dimen/dimen_5_dp"
+            android:text="@string/sociology"/>
+    </RadioGroup>
+</LinearLayout>

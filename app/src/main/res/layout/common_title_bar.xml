@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/rl_main"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorWhite">
+
+    <RelativeLayout
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_48_dp">
+
+        <Button
+            android:id="@+id/title_btn_left"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dimen_40_dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dimen_10_dp"
+            android:background="@color/transparent"
+            android:gravity="left|center_vertical"
+            android:textColor="@color/color_light_green"
+            android:textSize="@dimen/text_size_18"/>
+
+        <TextView
+            android:id="@+id/title_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dimen_40_dp"
+            android:layout_centerInParent="true"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="1"
+            android:maxWidth="@dimen/dimen_200_dp"
+            android:textColor="@color/color_text_title"
+            android:textSize="@dimen/text_size_20"
+            android:textStyle="bold"/>
+
+        <Button
+            android:id="@+id/title_btn_right"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dimen_40_dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dimen_10_dp"
+            android:background="@color/transparent"
+            android:gravity="right|center_vertical"
+            android:textColor="@color/color_light_green"
+            android:textSize="@dimen/text_size_16"/>
+
+        <View
+            android:id="@+id/point"
+            android:layout_width="@dimen/dimen_10_dp"
+            android:layout_height="@dimen/dimen_10_dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/dimen_5_dp"
+            android:layout_marginTop="@dimen/dimen_5_dp"
+            android:background="@drawable/point"
+            android:visibility="gone"/>
+
+        <LinearLayout
+            android:id="@+id/common_tab"
+            android:layout_width="@dimen/dimen_150_dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/ll_top_bg"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/concerned"
+                style="@style/top_concerned"
+                android:text="@string/concerned"/>
+
+            <Button
+                android:id="@+id/ranking_list"
+                style="@style/top_ranking_list"
+                android:text="@string/ranking_list"/>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

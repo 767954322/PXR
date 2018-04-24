@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorGray"
+    android:orientation="vertical">
+
+    <com.diting.pingxingren.custom.TitleBarView
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_1_dp"
+                android:background="@color/colorWhite"
+                android:padding="@dimen/dimen_10_dp">
+
+                <TextView
+                    android:id="@+id/tv_question"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tv_question"
+                    android:textColor="@color/color_text_title"
+                    android:textSize="@dimen/text_size_18" />
+
+                <EditText
+                    android:id="@+id/et_question"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_10_dp"
+                    android:layout_toLeftOf="@+id/ivQuVoiceInput"
+                    android:layout_toRightOf="@id/tv_question"
+                    android:background="@color/colorWhite"
+                    android:hint="@string/question_hint_role"
+                    android:inputType="textMultiLine"
+                    android:textColor="@color/color_text_title"
+                    android:textColorHint="@color/color_text_deep"
+                    android:textSize="@dimen/text_size_18" />
+
+                <ImageView
+                    android:id="@+id/ivQuVoiceInput"
+                    android:layout_width="@dimen/dimen_50_dp"
+                    android:layout_height="@dimen/dimen_30_dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+
+                    android:src="@drawable/ic_voice_input" />
+
+                <TextView
+                    android:id="@+id/tvQuVoiceTip"
+                    android:layout_width="@dimen/dimen_50_dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/ivQuVoiceInput"
+                    android:layout_marginTop="@dimen/dimen_5_dp"
+                    android:gravity="center_horizontal"
+                    android:text="语音录入"
+                    android:textColor="@color/commonColor"
+                    android:textSize="@dimen/text_size_12" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_10_dp"
+                android:background="@color/colorWhite"
+                android:padding="@dimen/dimen_10_dp">
+
+                <TextView
+                    android:id="@+id/tip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tv_answer"
+                    android:textColor="@color/color_text_title"
+                    android:textSize="@dimen/text_size_18" />
+
+                <EditText
+                    android:id="@+id/et_answer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_10_dp"
+                    android:layout_marginRight="@dimen/dimen_50_dp"
+                    android:layout_toRightOf="@+id/tip"
+                    android:background="@color/colorWhite"
+                    android:hint="@string/answer_hint_role"
+                    android:inputType="textMultiLine"
+                    android:textColor="@color/color_text_title"
+                    android:textColorHint="@color/color_text_deep"
+                    android:textSize="@dimen/text_size_18" />
+
+                <ImageView
+                    android:id="@+id/ivVoiceInput"
+                    android:layout_width="@dimen/dimen_50_dp"
+                    android:layout_height="@dimen/dimen_30_dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+
+                    android:src="@drawable/ic_voice_input" />
+
+                <TextView
+                    android:layout_width="@dimen/dimen_50_dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/ivVoiceInput"
+                    android:layout_marginTop="@dimen/dimen_5_dp"
+                    android:gravity="center_horizontal"
+                    android:text="语音录入"
+                    android:textColor="@color/commonColor"
+                    android:textSize="@dimen/text_size_12" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_10_dp"
+                android:background="@color/colorWhite"
+                android:padding="@dimen/dimen_10_dp">
+
+                <TextView
+                    android:id="@+id/tvAnnex"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/annex"
+                    android:textColor="@color/color_text_title"
+                    android:textSize="@dimen/text_size_18" />
+
+                <ImageView
+                    android:id="@+id/iv_photo"
+                    android:layout_width="@dimen/dimen_60_dp"
+                    android:layout_height="@dimen/dimen_60_dp"
+                    android:layout_margin="@dimen/dimen_10_dp"
+                    android:layout_toEndOf="@+id/tvAnnex"
+                    android:layout_toRightOf="@+id/tvAnnex"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_add_annex" />
+
+                <ImageView
+                    android:id="@+id/ivDelete"
+                    android:layout_width="@dimen/dimen_20_dp"
+                    android:layout_height="@dimen/dimen_20_dp"
+                    android:layout_marginLeft="@dimen/dimen__20_dp"
+                    android:layout_marginStart="@dimen/dimen__20_dp"
+                    android:layout_toEndOf="@+id/iv_photo"
+                    android:layout_toRightOf="@+id/iv_photo"
+                    android:src="@drawable/ic_close"
+                    android:visibility="gone" />
+
+
+                <LinearLayout
+                    android:id="@+id/lay_copyLink"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/iv_photo"
+                    android:layout_toRightOf="@+id/iv_photo"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/et_Hyperlink"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@+id/iv_photo"
+                        android:layout_toRightOf="@+id/iv_photo"
+                        android:background="@null"
+                        android:visibility="gone"
+                        android:textColor="@color/color_text_deep"
+                        android:textColorHint="@color/color_tip"
+                        android:textSize="@dimen/text_size_18" />
+
+                    <ImageView
+                        android:id="@+id/ivLinkDelete"
+                        android:layout_width="@dimen/dimen_20_dp"
+                        android:layout_height="15dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/dimen__20_dp"
+                        android:layout_marginStart="@dimen/dimen__20_dp"
+                        android:visibility="gone"
+                        android:layout_toEndOf="@+id/iv_photo"
+                        android:layout_toRightOf="@+id/tv_Hyperlink"
+                        android:src="@drawable/ic_close" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_10_dp"
+                android:background="@color/colorWhite"
+                android:padding="@dimen/dimen_10_dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tv_scene"
+                    android:textColor="@color/color_text_title"
+                    android:textSize="@dimen/text_size_18" />
+
+                <EditText
+                    android:id="@+id/et_scene"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_10_dp"
+                    android:background="@color/colorWhite"
+                    android:textColor="@color/color_text_title"
+                    android:textColorHint="@color/color_tip"
+                    android:textSize="@dimen/text_size_18" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_tip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_10_dp"
+                android:background="@color/colorWhite"
+                android:padding="@dimen/dimen_10_dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="提示:"
+                    android:textColor="@color/color_text_title"
+                    android:textSize="@dimen/text_size_18" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_10_dp"
+                    android:background="@color/colorWhite"
+                    android:text="对于一个问题的多种不同表达, 无需重复添加。例如：‘你们公司在哪里’ 和 ‘你们在什么地方’"
+                    android:textColor="@color/color_text_deep"
+                    android:textColorHint="@color/color_tip"
+                    android:textSize="@dimen/text_size_18" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

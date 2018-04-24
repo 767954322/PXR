@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite">
+
+    <com.diting.pingxingren.custom.TitleBarView
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/title_bar"
+        android:background="@color/colorWhite"
+        android:id="@+id/relativeLayout">
+        <RelativeLayout
+            android:id="@+id/lala"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@+id/center_view"
+            android:layout_marginTop="@dimen/dimen_20_dp"
+            android:background="@color/commonColor" />
+
+        <ImageView
+            android:id="@+id/center_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:visibility="invisible" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/login_picture"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:contentDescription="@string/app_name"
+                android:src="@mipmap/icon_login" />
+
+            <TextView
+                android:id="@+id/tv_qr_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dimen_10_dp"
+                android:lineSpacingExtra="@dimen/dimen_6_dp"
+                android:text="@string/tv_qr_code" />
+
+            <ImageView
+                android:id="@+id/iv_qr_code"
+                android:layout_width="@dimen/dimen_200_dp"
+                android:layout_height="@dimen/dimen_200_dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dimen_20_dp"
+                android:contentDescription="@string/app_name" />
+
+            <TextView
+                android:id="@+id/tv_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dimen_10_dp"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/text_size_24" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:lineSpacingExtra="@dimen/dimen_6_dp"
+                android:text="@string/tv_qr_code_tip"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/text_size_16" />
+
+            <Button
+                android:id="@+id/btn_save"
+                style="@style/btn_login"
+                android:layout_marginLeft="@dimen/dimen_30_dp"
+                android:layout_marginRight="@dimen/dimen_30_dp"
+                android:layout_marginTop="@dimen/dimen_50_dp"
+                android:text="保存到手机"
+                android:visibility="gone" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

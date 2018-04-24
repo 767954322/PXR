@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/title_bar"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dimen_48_dp">
+
+    <TextView
+        android:id="@+id/title_btn_left"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:padding="@dimen/dimen_10_dp"
+        android:background="@color/transparent"
+        android:drawableLeft="@drawable/ic_back"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/text_size_18"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@+id/title_btn_left"
+        android:visibility="gone"
+        android:id="@+id/iv_icon"/>
+
+    <TextView
+        android:id="@+id/title_title"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:padding="@dimen/dimen_10_dp"
+        android:background="@color/transparent"
+        android:textColor="@color/colorBlack"
+        android:layout_toRightOf="@+id/iv_icon"
+        android:textStyle="bold"
+        android:textSize="@dimen/text_size_18"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/news_title_line_color"
+        android:id="@+id/line"
+        android:layout_toRightOf="@+id/title_title"
+        android:layout_marginRight="@dimen/dimen_5_dp"
+        android:layout_centerVertical="true"
+        android:visibility="invisible"/>
+
+    <ImageView
+        android:id="@+id/title_iv_right"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dimen_40_dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/dimen_10_dp"
+        android:background="@color/transparent"
+        android:gravity="right|center_vertical"
+        android:visibility="gone"/>
+
+    <ImageView
+        android:id="@+id/title_iv_right_second"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dimen_40_dp"
+        android:layout_toLeftOf="@+id/title_iv_right"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/dimen_10_dp"
+        android:background="@color/transparent"
+        android:gravity="right|center_vertical"
+        android:visibility="gone"/>
+
+</RelativeLayout>

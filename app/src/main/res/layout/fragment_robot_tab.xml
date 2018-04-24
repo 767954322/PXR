@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/llMine"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/colorGray"
+              android:orientation="vertical">
+
+    <com.diting.pingxingren.custom.TitleBarView
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </com.diting.pingxingren.custom.TitleBarView>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/id_swipe_ly"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_0_dp"
+        android:layout_marginTop="@dimen/dimen_10_dp"
+        android:layout_weight="1">
+
+        <ListView
+            android:id="@+id/msg_list_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="#0000"
+            android:dividerHeight="@dimen/dimen_20_dp"
+            android:listSelector="@color/transparent"
+            android:transcriptMode="normal">
+        </ListView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <ListView
+        android:id="@+id/lv_phrase"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_120_dp"
+        android:background="@color/colorWhite"
+        android:divider="@color/colorGray"
+        android:dividerHeight="@dimen/dimen_1_dp"
+        android:paddingLeft="@dimen/dimen_10_dp"
+        android:paddingRight="@dimen/dimen_10_dp"
+        android:transcriptMode="normal"
+        android:visibility="gone">
+    </ListView>
+
+    <LinearLayout
+        android:id="@+id/ll_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_input"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center_vertical"
+        android:paddingBottom="@dimen/dimen_5_dp"
+        android:paddingTop="@dimen/dimen_5_dp">
+
+        <ImageView
+            android:id="@+id/iv_voice"
+            android:layout_width="@dimen/dimen_40_dp"
+            android:layout_height="@dimen/dimen_40_dp"
+            android:layout_marginLeft="@dimen/dimen_5_dp"
+            android:layout_marginRight="@dimen/dimen_5_dp"
+            android:src="@mipmap/voice_btn_normal"/>
+
+        <EditText
+            android:id="@+id/input_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/send_btn_disable"
+            android:gravity="center_vertical"
+            android:minHeight="@dimen/dimen_33_dp"
+            android:paddingLeft="@dimen/dimen_5_dp"
+            android:paddingRight="@dimen/dimen_5_dp"
+            android:textColor="@color/color_text_deep"
+            android:textSize="@dimen/text_size_16"/>
+
+        <com.diting.pingxingren.custom.AudioRecordButton
+            android:id="@+id/btn_voice"
+            android:layout_width="@dimen/dimen_0_dp"
+            android:layout_height="@dimen/dimen_33_dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:background="@drawable/button_recordnormal"
+            android:gravity="center"
+            android:text="@string/normal"
+            android:textColor="#727272"
+            android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/send"
+            android:layout_width="@dimen/dimen_60_dp"
+            android:layout_height="@dimen/dimen_33_dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/dimen_10_dp"
+            android:layout_marginRight="@dimen/dimen_10_dp"
+            android:background="@drawable/send_btn_disable"
+            android:text="@string/button_send"
+            android:textColor="@color/color_text_deep"
+            android:textSize="@dimen/text_size_16"/>
+    </LinearLayout>
+</LinearLayout>

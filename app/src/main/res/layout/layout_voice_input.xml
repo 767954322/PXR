@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/id_ll_multi"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="@color/colorWhite"
+                android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvInputText"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/rlVoiceInput"
+        android:padding="@dimen/dimen_16_dp"/>
+
+    <TextView
+        android:id="@+id/tvInputTip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/rlVoiceInput"
+        android:layout_centerHorizontal="true"
+        android:text="@string/normal"
+        android:textSize="@dimen/text_size_14"/>
+
+    <RelativeLayout
+        android:id="@+id/rlVoiceInput"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_80_dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/dimen_24_dp"
+        android:layout_marginTop="@dimen/dimen_10_dp">
+
+        <ImageView
+            android:id="@+id/ivVoiceBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ic_voice_recording1"
+            android:scaleType="centerInside"
+            android:visibility="gone"/>
+
+        <ImageView
+            android:id="@+id/ivVoice"
+            android:layout_width="@dimen/dimen_50_dp"
+            android:layout_height="@dimen/dimen_50_dp"
+            android:layout_centerInParent="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_voice_recording"/>
+
+        <TextView
+            android:id="@+id/tvCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dimen_16_dp"
+            android:layout_marginStart="@dimen/dimen_16_dp"
+            android:text="@string/tv_cancel"
+            android:textSize="@dimen/text_size_18"
+            android:visibility="gone"/>
+
+        <ImageView
+            android:id="@+id/ivCancel"
+            android:layout_width="@dimen/dimen_24_dp"
+            android:layout_height="@dimen/dimen_24_dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dimen_16_dp"
+            android:layout_marginStart="@dimen/dimen_16_dp"
+            android:src="@drawable/ic_back"/>
+
+        <TextView
+            android:id="@+id/tvConfirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/dimen_16_dp"
+            android:layout_marginRight="@dimen/dimen_16_dp"
+            android:text="@string/tv_confirm"
+            android:textColor="@color/commonColor"
+            android:textSize="@dimen/text_size_18"
+            android:visibility="gone"/>
+    </RelativeLayout>
+</RelativeLayout>

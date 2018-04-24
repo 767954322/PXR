@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:id="@+id/ll_main"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/colorGray"
+              android:focusable="true"
+              android:focusableInTouchMode="true"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:paddingBottom="@dimen/dimen_3_dp"
+        android:paddingLeft="@dimen/dimen_10_dp"
+        android:paddingRight="@dimen/dimen_10_dp"
+        android:paddingTop="@dimen/dimen_3_dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/btn_sort"
+            android:background="@color/colorWhite"
+            android:drawableLeft="@mipmap/icon_search"
+            android:gravity="center_vertical"
+            android:hint="搜索"
+            android:minHeight="@dimen/dimen_33_dp"
+            android:layout_marginTop="@dimen/dimen_5_dp"
+            android:paddingLeft="@dimen/dimen_10_dp"
+            android:paddingRight="@dimen/dimen_10_dp"
+            android:textColor="@color/color_text_deep"
+            android:textColorHint="@color/color_search_hint"
+            android:textSize="@dimen/text_size_18"/>
+
+        <TextView
+            android:id="@+id/btn_sort"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dimen_33_dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/send_btn_enable"
+            android:drawablePadding="@dimen/dimen_5_dp"
+            android:drawableRight="@mipmap/icon_arrow_down"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/dimen_15_dp"
+            android:paddingRight="@dimen/dimen_10_dp"
+            android:text="问答排序"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/text_size_18"
+            android:visibility="gone"/>
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_no_concern"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_20_dp"
+            android:src="@mipmap/icon_no_knowledge">
+        </ImageView>
+
+        <TextView
+            android:id="@+id/tv_prompt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_20_dp"
+            android:text="@string/tv_no_concern"/>
+
+        <Button
+            android:id="@+id/btn_concern"
+            style="@style/btn_login"
+            android:layout_marginLeft="@dimen/dimen_60_dp"
+            android:layout_marginRight="@dimen/dimen_60_dp"
+            android:layout_marginTop="@dimen/dimen_20_dp"
+            android:text="去关注机器人"/>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lv_search"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@color/colorGray"
+        android:dividerHeight="@dimen/dimen_1_dp"
+        android:listSelector="@color/transparent"
+        android:scrollbars="none"
+        android:visibility="gone">
+    </ListView>
+
+    <FrameLayout
+        android:id="@+id/fl_rank_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.diting.pingxingren.custom.LoadListView
+            android:id="@+id/lv_concern"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@color/colorGray"
+            android:dividerHeight="@dimen/dimen_3_dp"
+            android:listSelector="@color/transparent"
+            android:scrollbars="none">
+        </com.diting.pingxingren.custom.LoadListView>
+    </FrameLayout>
+</LinearLayout>

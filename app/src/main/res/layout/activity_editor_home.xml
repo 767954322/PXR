@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+        <variable
+            name="click"
+            type="com.diting.pingxingren.smarteditor.listener.ClickListener"/>
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorInputLayout"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/titleLayout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_50_dp">
+
+            <TextView
+                android:id="@+id/tvType"
+                style="@style/CommonText.Title"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dimen_16_dp"
+                android:layout_marginStart="@dimen/dimen_16_dp"
+                android:drawableEnd="@drawable/ic_sort_down"
+                android:drawablePadding="@dimen/dimen_6_dp"
+                android:drawableRight="@drawable/ic_sort_down"
+                android:onClick="@{click::onClick}"
+                android:text="@string/editor_text_all"/>
+
+            <Button
+                android:id="@+id/btSearch"
+                android:layout_width="@dimen/dimen_24_dp"
+                android:layout_height="@dimen/dimen_24_dp"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/btMultifunction"
+                android:layout_toStartOf="@+id/btMultifunction"
+                android:background="@drawable/ic_search"
+                android:onClick="@{click::onClick}"/>
+
+            <Button
+                android:id="@+id/btMultifunction"
+                android:layout_width="@dimen/dimen_24_dp"
+                android:layout_height="@dimen/dimen_24_dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dimen_16_dp"
+                android:layout_marginRight="@dimen/dimen_16_dp"
+                android:background="@drawable/ic_multifunction"
+                android:onClick="@{click::onClick}"/>
+        </RelativeLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/monthRecycler"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_150_dp"
+            android:layout_below="@+id/titleLayout"
+            android:layout_margin="@dimen/dimen_10_dp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/monthRecycler"
+            android:layout_marginBottom="@dimen/dimen_10_dp"
+            android:layout_marginLeft="@dimen/dimen_10_dp"
+            android:layout_marginRight="@dimen/dimen_10_dp">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/articleRecycler"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+            <TextView
+                android:id="@+id/tvNotData"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="@string/tips_not_article"
+                android:visibility="gone"
+                android:textSize="@dimen/text_size_20"/>
+        </RelativeLayout>
+
+
+        <Button
+            android:id="@+id/addArticle"
+            android:layout_width="@dimen/dimen_60_dp"
+            android:layout_height="@dimen/dimen_60_dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="@dimen/dimen_35_dp"
+            android:layout_marginEnd="@dimen/dimen_35_dp"
+            android:layout_marginRight="@dimen/dimen_35_dp"
+            android:background="@drawable/ic_voice_recording"
+            android:onClick="@{click::onClick}"/>
+    </RelativeLayout>
+</layout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_48_dp"
+        android:background="@color/colorWhite">
+
+        <LinearLayout
+            android:id="@+id/llBack"
+            android:layout_width="@dimen/dimen_30_dp"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/ivBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_12_dp"
+                android:layout_marginStart="@dimen/dimen_12_dp"
+                android:src="@drawable/ic_back"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/general_function"
+            android:textColor="@color/color_text_title"
+            android:textSize="@dimen/text_size_20"/>
+
+        <TextView
+            android:id="@+id/tvComplete"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/dimen_16_dp"
+            android:layout_marginRight="@dimen/dimen_16_dp"
+            android:gravity="center"
+            android:text="@string/complete"
+            android:textColor="@color/color_light_green"
+            android:textSize="@dimen/text_size_16"/>
+    </RelativeLayout>
+
+    <GridView
+        android:id="@+id/gvApplication"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_10_dp"
+        android:layout_marginRight="@dimen/dimen_10_dp"
+        android:layout_marginTop="@dimen/dimen_10_dp"
+        android:horizontalSpacing="@dimen/dimen_10_dp"
+        android:listSelector="@color/transparent"
+        android:numColumns="4"
+        android:scrollbars="none"
+        android:verticalSpacing="@dimen/dimen_5_dp"/>
+</LinearLayout>

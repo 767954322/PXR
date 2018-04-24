@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:paddingLeft="@dimen/dimen_30_dp"
+              android:paddingRight="@dimen/dimen_30_dp">
+
+    <EditText
+        android:id="@+id/username"
+        style="@style/et_user_info"
+        android:layout_marginTop="@dimen/dimen_40_dp"
+        android:drawableLeft="@mipmap/icon_mobile"
+        android:hint="@string/tv_username"
+        android:inputType="phone"/>
+
+    <View
+        style="@style/devide_line"/>
+
+    <EditText
+        android:id="@+id/password"
+        style="@style/et_user_info"
+        android:drawableLeft="@mipmap/icon_password"
+        android:hint="@string/tv_password"
+        android:inputType="textPassword"/>
+
+    <View
+        style="@style/devide_line"/>
+
+    <Button
+        android:id="@+id/login"
+        style="@style/btn_login"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="@dimen/dimen_0_dp"
+        android:layout_marginRight="@dimen/dimen_0_dp"
+        android:layout_marginTop="@dimen/dimen_50_dp"
+        android:enabled="false"
+        android:text="@string/submit"/>
+</LinearLayout>

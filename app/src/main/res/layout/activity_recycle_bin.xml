@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.diting.pingxingren.custom.TitleBarView
+            android:id="@+id/titleView"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_50_dp"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/articleRecycler"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/titleView"
+            android:layout_margin="@dimen/dimen_6_dp"/>
+
+        <TextView
+            android:id="@+id/tvNotData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="@string/tips_not_article"
+            android:visibility="gone"
+            android:textSize="@dimen/text_size_20"/>
+    </RelativeLayout>
+</layout>

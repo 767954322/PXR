@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+        <variable
+            name="clickListener"
+            type="com.diting.pingxingren.listener.ClickListener"/>
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/call_voice_bg_color">
+
+        <RelativeLayout
+            android:id="@+id/layoutSurface"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"/>
+
+        <ImageView
+            android:id="@+id/userHead"
+            style="@style/CommonImage.VoiceCall"
+            android:layout_marginLeft="@dimen/dimen_20_dp"
+            android:layout_marginStart="@dimen/dimen_20_dp"
+            android:layout_marginTop="@dimen/dimen_20_dp"
+            android:src="@drawable/ic_default_head"/>
+
+        <TextView
+            android:id="@+id/robotName"
+            style="@style/CommonText.Title"
+            android:layout_alignTop="@+id/userHead"
+            android:layout_marginLeft="@dimen/dimen_10_dp"
+            android:layout_marginStart="@dimen/dimen_10_dp"
+            android:layout_toEndOf="@+id/userHead"
+            android:layout_toRightOf="@+id/userHead"/>
+
+        <TextView
+            android:id="@+id/callState"
+            style="@style/CommonText"
+            android:layout_alignLeft="@+id/robotName"
+            android:layout_alignStart="@+id/robotName"
+            android:layout_below="@+id/robotName"
+            android:layout_marginTop="@dimen/dimen_20_dp"/>
+
+        <LinearLayout
+            android:id="@+id/beforeAnswering"
+            style="@style/CommonLayout.VideoCall"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/rejectImage"
+                style="@style/CommonImage.VoiceCall"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="@{clickListener::onClick}"
+                android:src="@drawable/end_call_bg"/>
+
+            <ImageView
+                android:id="@+id/answerImage"
+                style="@style/CommonImage.VoiceCall"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="@{clickListener::onClick}"
+                android:src="@drawable/voice_call_answer_bg"/>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/afterAnswering"
+            style="@style/CommonLayout.VideoCall"
+            android:gravity="center_vertical"
+            android:visibility="gone"
+            >
+
+            <ImageView
+                android:id="@+id/endVideoCall"
+                style="@style/CommonImage.VoiceCall"
+                android:layout_centerHorizontal="true"
+                android:onClick="@{clickListener::onClick}"
+                android:src="@drawable/end_call_bg"/>
+
+            <ImageView
+                android:id="@+id/switchCamera"
+                style="@style/CommonImage.VoiceCall"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/dimen_30_dp"
+                android:onClick="@{clickListener::onClick}"
+                android:src="@drawable/switch_camera"/>
+        </RelativeLayout>
+
+    </RelativeLayout>
+</layout>

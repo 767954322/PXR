@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:paddingLeft="@dimen/dimen_30_dp"
+              android:paddingRight="@dimen/dimen_30_dp">
+
+    <com.diting.pingxingren.custom.ClearEditText
+        android:id="@+id/et_username"
+        style="@style/et_user_info"
+        android:layout_marginTop="@dimen/dimen_50_dp"
+        android:drawableLeft="@mipmap/icon_mobile"
+        android:hint="@string/tv_username"
+        android:inputType="phone"/>
+
+    <View
+        style="@style/devide_line"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.diting.pingxingren.custom.ClearEditText
+            android:id="@+id/et_verify_code"
+            style="@style/et_user_info"
+            android:layout_width="@dimen/dimen_0_dp"
+            android:layout_weight="1"
+            android:drawableLeft="@mipmap/icon_verifycode"
+            android:hint="@string/verifycode_input"
+            android:inputType="textPassword"/>
+
+        <Button
+            android:id="@+id/btn_send_message"
+            style="@style/btn_send_message"/>
+        <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:textColor="@color/color_send_message"-->
+        <!--android:textSize="@dimen/text_size_16"-->
+        <!--android:text="@string/send_message"-->
+        <!--android:layout_gravity="bottom"/>-->
+    </LinearLayout>
+
+    <View
+        style="@style/devide_line"/>
+
+    <com.diting.pingxingren.custom.ClearEditText
+        android:id="@+id/et_password"
+        style="@style/et_user_info"
+        android:drawableLeft="@mipmap/icon_password"
+        android:hint="@string/et_password_hint"
+        android:inputType="textPassword"
+        />
+
+    <View
+        style="@style/devide_line"/>
+
+    <com.diting.pingxingren.custom.ClearEditText
+        android:id="@+id/et_confirm_password"
+        style="@style/et_user_info"
+        android:drawableLeft="@mipmap/icon_password"
+        android:hint="@string/tv_confirm_password"
+        android:inputType="textPassword"/>
+
+    <View
+        style="@style/devide_line"/>
+
+    <Button
+        android:id="@+id/btn_register"
+        style="@style/btn_login"
+        android:layout_marginLeft="@dimen/dimen_0_dp"
+        android:layout_marginRight="@dimen/dimen_0_dp"
+        android:layout_marginTop="@dimen/dimen_40_dp"
+        android:enabled="false"
+        android:text="@string/register"/>
+</LinearLayout>

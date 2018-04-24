@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <variable
+            name="title"
+            type="String"/>
+
+        <variable
+            name="listener"
+            type="com.diting.pingxingren.listener.ClickListener"/>
+    </data>
+
+    <RelativeLayout
+        style="@style/CommonLayout.Title">
+
+        <ImageView
+            android:id="@+id/ivTitleLeft"
+            style="@style/CommonImage.TitleBarImage"
+            android:onClick="@{listener::onClick}"
+            android:src="@drawable/ic_back"/>
+
+        <TextView
+            style="@style/CommonText.Title"
+            android:layout_centerInParent="true"
+            android:ellipsize="end"
+            android:maxWidth="@dimen/dimen_200_dp"
+            android:text="@{title}"
+            android:textColor="@color/color_text_title"
+            android:textSize="@dimen/text_size_22"
+            android:textStyle="bold"/>
+
+        <Button
+            android:id="@+id/btTitleRight"
+            style="@style/CommonButton.TitleBarButton"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:onClick="@{listener::onClick}"
+            android:visibility="gone"/>
+
+        <ImageView
+            android:id="@+id/ivTitleRight"
+            style="@style/CommonImage.TitleBarImage"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:onClick="@{listener::onClick}"
+            android:visibility="gone"/>
+    </RelativeLayout>
+</layout>

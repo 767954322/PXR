@@ -1,0 +1,410 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/ll_main"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/colorGray"
+              android:orientation="vertical">
+
+    <com.diting.pingxingren.custom.TitleBarView
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+    </com.diting.pingxingren.custom.TitleBarView>
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/banner"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginTop="1dp"
+                android:background="@color/colorWhite"
+                android:paddingBottom="10dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="修改头像"
+                    android:textColor="@color/color_text_title"
+                    android:textSize="@dimen/text_size_22"/>
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/iv_photo"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_alignParentRight="true"
+                    android:src="@mipmap/default_head"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/colorWhite"
+                >
+
+                <TextView
+                    android:id="@+id/tv_company_name"
+                    style="@style/tv_setting_common"
+                    android:drawableLeft="@mipmap/icon_company_name"
+                    android:text="@string/company_name"/>
+
+                <EditText
+                    android:id="@+id/et_company_name"
+                    style="@style/et_setting_common"
+                    android:layout_toRightOf="@+id/tv_company_name"
+                    android:hint="@string/et_company_hint"
+                    android:maxLength="16"
+                    android:maxLines="1"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="1dp"
+                android:background="@color/colorWhite"
+                >
+
+                <TextView
+                    android:id="@+id/tv_robot_name"
+                    style="@style/tv_setting_common"
+                    android:drawableLeft="@mipmap/icon_robot_setting"
+                    android:text="@string/robot_name"/>
+
+                <EditText
+                    android:id="@+id/et_robot_name"
+                    style="@style/et_setting_common"
+                    android:layout_toRightOf="@+id/tv_robot_name"
+                    android:hint="@string/et_robot_hint"
+                    android:maxLength="12"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="1dp"
+                android:background="@color/colorWhite"
+                >
+
+                <TextView
+                    android:id="@+id/tv_voice_login"
+                    style="@style/tv_setting_common"
+                    android:drawableLeft="@mipmap/icon_voice_password"
+                    android:text="@string/tv_voice_login"/>
+
+                <EditText
+                    android:id="@+id/et_voice_password"
+                    style="@style/et_setting_common"
+                    android:layout_toRightOf="@+id/tv_voice_login"
+                    android:hint="@string/et_voice_password_hint"
+                    android:maxLength="20"/>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="1dp"
+                android:background="@color/colorWhite"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                >
+
+                <TextView
+                    style="@style/tv_setting_common"
+                    android:drawableLeft="@mipmap/icon_sex"
+                    android:text="性别:"/>
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="男"/>
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text="女"/>
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="1dp"
+                android:background="@color/colorWhite"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                >
+
+                <TextView
+                    style="@style/tv_setting_common"
+                    android:drawableLeft="@mipmap/icon_birthday"
+                    android:text="生日:"/>
+
+                <TextView
+                    android:id="@+id/tv_birthday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="1989-11-10"/>
+            </LinearLayout>
+
+
+            <TextView
+                style="@style/tv_setting_common"
+                android:layout_height="40dp"
+                android:background="@color/transparent"
+                android:drawableLeft="@mipmap/icon_robot_profile"
+                android:drawablePadding="8dp"
+                android:text="@string/tv_robot_profile"/>
+
+            <com.diting.pingxingren.custom.MultiEditInputView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/et_profile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorWhite"
+                android:padding="5dp"
+                app:contentHeight="80dp"
+                app:hintText="@string/hint_profile"
+                app:maxCount="30"
+                >
+            </com.diting.pingxingren.custom.MultiEditInputView>
+
+            <TextView
+                style="@style/tv_setting_common"
+                android:layout_height="40dp"
+                android:background="@color/transparent"
+                android:drawableLeft="@mipmap/icon_robot_profile"
+                android:drawablePadding="8dp"
+                android:text="@string/tv_robot_welcome"/>
+
+            <com.diting.pingxingren.custom.MultiEditInputView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/et_welcome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorWhite"
+                android:padding="5dp"
+                app:contentHeight="80dp"
+                app:hintText="@string/hint_welcome"
+                app:maxCount="30"
+                >
+            </com.diting.pingxingren.custom.MultiEditInputView>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/colorWhite"
+                >
+
+                <TextView
+                    style="@style/tv_setting_common"
+                    android:drawableLeft="@mipmap/icon_industry"
+                    android:drawablePadding="8dp"
+                    android:text="@string/industry"/>
+
+                <TextView
+                    android:id="@+id/tv_industry"
+                    style="@style/et_setting_common"
+                    android:gravity="right"
+                    android:text="请选择行业"
+                    android:textColor="@color/color_light_green"
+                    />
+                <!--<Spinner-->
+                <!--android:layout_alignParentRight="true"-->
+                <!--android:id="@+id/spinner_industry"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:gravity="center"-->
+                <!--style="?android:attr/spinnerDropDownItemStyle"-->
+                <!--android:entries="@array/industry_list" />-->
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@color/colorWhite"
+                android:orientation="vertical"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp">
+
+                <TextView
+                    style="@style/tv_setting_common"
+                    android:drawableLeft="@mipmap/icon_my_app"
+                    android:drawablePadding="8dp"
+                    android:text="关注行业"
+                    />
+
+                <com.diting.pingxingren.custom.FlowLayout
+                    android:id="@+id/fl_industry"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:visibility="gone">
+                </com.diting.pingxingren.custom.FlowLayout>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/industry_recycler_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp">
+                </android.support.v7.widget.RecyclerView>
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center"
+                    android:text="@string/tv_common_knowledge"
+                    android:textColor="@color/color_text_deep"
+                    android:textSize="@dimen/text_size_18"/>
+
+                <ImageView
+                    android:id="@+id/iv_common"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:src="@mipmap/switch_on"/>
+                <!--<ToggleButton-->
+                <!--android:id="@+id/tg_common"-->
+                <!--android:layout_alignParentRight="true"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_gravity="center_horizontal"-->
+                <!--android:background="@android:color/transparent"-->
+                <!--android:button="@drawable/switch_btn"-->
+                <!--android:text=""-->
+                <!--android:textOff=""-->
+                <!--android:textOn=""-->
+                <!--/>-->
+            </RelativeLayout>
+
+
+            <!--<RelativeLayout-->
+            <!--android:layout_height="50dp"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:background="@color/colorWhite"-->
+            <!--&gt;-->
+            <!--<TextView-->
+            <!--style="@style/tv_setting_common"-->
+            <!--android:text="@string/tv_my_application"-->
+            <!--android:drawableLeft="@mipmap/icon_my_app"-->
+            <!--/>-->
+            <!--<TextView-->
+            <!--style="@style/et_setting_common"-->
+            <!--android:id="@+id/tv_select"-->
+            <!--android:textColor="@color/color_light_green"-->
+            <!--android:text="查看"-->
+            <!--/>-->
+            <!--</RelativeLayout>-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@color/colorWhite"
+                android:orientation="vertical"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp">
+
+                <TextView
+                    android:id="@+id/tv_select"
+                    style="@style/tv_setting_common"
+                    android:drawableLeft="@mipmap/icon_my_app"
+                    android:drawablePadding="8dp"
+                    android:text="@string/tv_my_application"
+                    />
+
+                <GridView
+                    android:id="@+id/gv_application"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:horizontalSpacing="10dp"
+                    android:listSelector="@color/transparent"
+                    android:numColumns="4"
+                    android:scrollbars="none"
+                    android:verticalSpacing="5dp">
+                </GridView>
+                <!--<android.support.v7.widget.RecyclerView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent">-->
+                <!--</android.support.v7.widget.RecyclerView>-->
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="0dp"-->
+    <!--android:layout_weight="1"-->
+    <!--android:background="@color/colorWhite"-->
+    <!--android:paddingTop="10dp"-->
+    <!--android:orientation="vertical"-->
+    <!--android:paddingBottom="10dp">-->
+    <!--<TextView-->
+    <!--style="@style/tv_setting_common"-->
+    <!--android:text="@string/tv_my_application"-->
+    <!--android:drawableLeft="@mipmap/icon_my_app"-->
+    <!--/>-->
+    <!--<GridView-->
+    <!--android:layout_marginLeft="10dp"-->
+    <!--android:layout_marginRight="10dp"-->
+    <!--android:id="@+id/gv_application"-->
+    <!--android:listSelector="@color/transparent"-->
+    <!--android:layout_marginTop="10dp"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:numColumns="4"-->
+    <!--android:verticalSpacing="5dp"-->
+    <!--android:horizontalSpacing="8dp"-->
+    <!--android:scrollbars="none"-->
+    <!--android:layout_height="match_parent">-->
+    <!--</GridView>-->
+    <!--</LinearLayout>-->
+
+</LinearLayout>

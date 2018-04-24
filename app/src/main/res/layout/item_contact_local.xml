@@ -1,0 +1,90 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/ll_contact"
+              android:layout_width="match_parent"
+              android:layout_height="@dimen/dimen_70_dp"
+              android:background="@color/colorWhite"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_70_dp"
+        android:background="@color/colorWhite"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="@dimen/dimen_5_dp">
+
+        <CheckBox
+            android:id="@+id/checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"/>
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="@dimen/dimen_45_dp"
+            android:layout_height="@dimen/dimen_45_dp"
+            android:layout_marginLeft="@dimen/dimen_5_dp"
+            android:src="@mipmap/icon_left"/>
+
+        <LinearLayout
+            android:layout_width="@dimen/dimen_0_dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_10_dp"
+            android:layout_marginRight="@dimen/dimen_10_dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="联系人:"
+                    android:textSize="@dimen/text_size_18"/>
+
+                <TextView
+                    android:id="@+id/tv_robot"
+                    android:layout_width="@dimen/dimen_0_dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_20_dp"
+                    android:layout_weight="1"
+                    android:maxLines="1"
+                    android:text="逆流而上"
+                    android:textSize="@dimen/text_size_18"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="电话:"
+                    android:textSize="@dimen/text_size_18"/>
+
+                <TextView
+                    android:id="@+id/tv_phone"
+                    android:layout_width="@dimen/dimen_0_dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_30_dp"
+                    android:layout_weight="1"
+                    android:text="13161202845"
+                    android:textSize="@dimen/text_size_18"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_uploaded"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="已导入"/>
+    </LinearLayout>
+
+    <View
+        style="@style/devide_line"/>
+</LinearLayout>

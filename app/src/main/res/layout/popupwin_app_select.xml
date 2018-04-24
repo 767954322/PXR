@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="@dimen/dimen_230_dp"
+                android:layout_height="match_parent"
+                android:background="@color/colorWhite">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_48_dp"
+        android:layout_alignParentTop="true"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/dimen_10_dp"
+        android:text="@string/my_app"
+        android:textColor="@color/color_text_title"
+        android:textSize="@dimen/text_size_18"/>
+
+    <View
+        android:id="@+id/devide"
+        style="@style/devide_line"
+        android:layout_below="@+id/title"/>
+
+    <GridView
+        android:id="@+id/grid_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/devide"
+        android:horizontalSpacing="@dimen/dimen_10_dp"
+        android:numColumns="2"
+        android:padding="@dimen/dimen_10_dp"
+        android:verticalSpacing="@dimen/dimen_10_dp"/>
+
+    <View
+        style="@style/devide_line"
+        android:layout_above="@+id/finish"/>
+
+    <TextView
+        android:id="@+id/finish"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_48_dp"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:text="@string/complete"
+        android:textColor="@color/color_light_green"
+        android:textSize="@dimen/text_size_18"/>
+</RelativeLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <com.diting.pingxingren.custom.TitleBarView
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </com.diting.pingxingren.custom.TitleBarView>
+
+    <!--<RelativeLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="48dp"-->
+        <!--android:layout_gravity="center_vertical"-->
+        <!--android:background="@color/colorSplash">-->
+
+        <!--<ImageView-->
+            <!--android:id="@+id/back"-->
+            <!--android:layout_width="48dp"-->
+            <!--android:layout_height="48dp"-->
+            <!--android:scaleType="center"-->
+            <!--android:src="@mipmap/ic_back"/>-->
+
+        <!--<TextView-->
+            <!--android:layout_toRightOf="@+id/back"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:gravity="center_vertical"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:text="发音选择"-->
+            <!--android:textColor="@color/colorRight"-->
+            <!--android:textSize="@dimen/text_size_22"/>-->
+    <!--</RelativeLayout>-->
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/voicePeople"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+    </android.support.v7.widget.RecyclerView>
+</LinearLayout>

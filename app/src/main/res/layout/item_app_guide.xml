@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="horizontal"
+              android:paddingBottom="@dimen/dimen_5_dp"
+              android:paddingTop="@dimen/dimen_5_dp">
+
+    <TextView
+        android:id="@+id/tv_app_name"
+        android:layout_width="@dimen/dimen_0_dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="时间"
+        android:textColor="@color/colorWhite"/>
+
+    <TextView
+        android:id="@+id/tv_app_example"
+        android:layout_width="@dimen/dimen_0_dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="3"
+        android:gravity="left"
+        android:paddingRight="@dimen/dimen_20_dp"
+        android:text="跟我说几点了啊实打实啊实打实啊实打"
+        android:textColor="@color/colorWhite"/>
+</LinearLayout>

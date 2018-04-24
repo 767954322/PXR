@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/tv_title"
+            style="@style/tv_18dp_text_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/dimen_10_dp"
+             />
+
+        <View
+            android:layout_width="match_parent"
+
+            android:layout_height="@dimen/dimen_1_dp"
+            android:background="@color/devide_line" />
+
+        <TextView
+            android:id="@+id/tv_content"
+            style="@style/tv_18dp_text_deep"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:lineSpacingExtra="@dimen/dimen_8_dp"
+            android:padding="@dimen/dimen_15_dp"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_1_dp"
+            android:background="@color/devide_line" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <TextView
+                android:id="@+id/tv_content_tip_first"
+                style="@style/tv_16dp_text_light"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:padding="@dimen/dimen_10_dp"
+                android:textColor="@color/color_light_green" />
+
+            <TextView
+                android:id="@+id/tv_content_tip_Second"
+                style="@style/tv_16dp_text_light"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/tv_content_tip_first"
+                android:paddingBottom="@dimen/dimen_10_dp"
+                android:paddingRight="@dimen/dimen_10_dp"
+                android:paddingTop="@dimen/dimen_10_dp"
+                android:textColor="@color/color_light_green" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_ok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/dp_10"
+            android:background="@drawable/send_btn_enable"
+            android:gravity="center"
+            android:paddingBottom="@dimen/dimen_8_dp"
+            android:paddingLeft="@dimen/dimen_20_dp"
+            android:paddingRight="@dimen/dimen_20_dp"
+            android:paddingTop="@dimen/dimen_8_dp">
+
+            <TextView
+                android:id="@+id/tv_ok"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/submit"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/text_size_16" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

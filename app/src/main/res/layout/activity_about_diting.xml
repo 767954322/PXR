@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:gravity="center_horizontal"
+              android:orientation="vertical">
+
+    <com.diting.pingxingren.custom.TitleBarView
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </com.diting.pingxingren.custom.TitleBarView>
+
+    <ImageView
+        android:id="@+id/login_picture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title_bar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dimen_30_dp"
+        android:contentDescription="@string/app_name"
+        android:src="@mipmap/icon_login"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_30_dp"
+        android:gravity="center"
+        android:text="@string/company_diting"
+        android:textColor="@color/color_text_title"
+        android:textSize="@dimen/text_size_14"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_10_dp"
+        android:gravity="center"
+        android:text="@string/company_website"
+        android:textColor="@color/color_text_title"
+        android:textSize="@dimen/text_size_14"/>
+
+    <TextView
+        android:id="@+id/tv_version"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_10_dp"
+        android:gravity="center"
+        android:text="@string/current_version"
+        android:textColor="@color/color_text_title"
+        android:textSize="@dimen/text_size_14"/>
+
+    <Button
+        android:id="@+id/btn_check_update"
+        style="@style/btn_login"
+        android:layout_marginLeft="@dimen/dimen_30_dp"
+        android:layout_marginRight="@dimen/dimen_30_dp"
+        android:layout_marginTop="@dimen/dimen_50_dp"
+        android:text="@string/check_update"/>
+</LinearLayout>

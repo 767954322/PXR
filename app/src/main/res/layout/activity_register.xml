@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/ll_main"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorGray">
+
+    <com.diting.pingxingren.custom.TitleBarView
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/title_bar"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/login_picture"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/dimen_30_dp"
+                android:contentDescription="@string/app_name"
+                android:src="@mipmap/icon_login"/>
+
+            <LinearLayout
+                style="@style/rl_login"
+                android:layout_marginTop="@dimen/dimen_30_dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <com.diting.pingxingren.custom.ClearEditText
+                    android:id="@+id/et_username"
+                    style="@style/et_user_info"
+                    android:drawableLeft="@mipmap/icon_mobile"
+                    android:hint="@string/tv_username"
+                    android:inputType="phone"
+                    android:maxLength="11"/>
+
+                <View style="@style/devide_line"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.diting.pingxingren.custom.ClearEditText
+                        android:id="@+id/et_verify_code"
+                        style="@style/et_user_info"
+                        android:layout_width="@dimen/dimen_0_dp"
+                        android:layout_weight="1"
+                        android:drawableLeft="@mipmap/icon_verifycode"
+                        android:hint="@string/verifycode_input"
+                        android:inputType="number"
+                        android:maxLength="4"/>
+
+                    <Button
+                        android:id="@+id/btn_send_message"
+                        style="@style/btn_send_message"/>
+                </LinearLayout>
+
+                <View style="@style/devide_line"/>
+
+                <com.diting.pingxingren.custom.ClearEditText
+                    android:id="@+id/et_password"
+                    style="@style/et_user_info"
+                    android:drawableLeft="@mipmap/icon_password"
+                    android:hint="@string/et_password_hint"
+                    android:inputType="textPassword"
+                    android:maxLength="16"
+                    android:maxLines="1"/>
+
+                <View style="@style/devide_line"/>
+
+                <com.diting.pingxingren.custom.ClearEditText
+                    android:id="@+id/et_confirm_password"
+                    style="@style/et_user_info"
+                    android:drawableLeft="@mipmap/icon_password"
+                    android:hint="@string/tv_confirm_password"
+                    android:inputType="textPassword"
+                    android:maxLength="16"
+                    android:maxLines="1"/>
+
+                <View style="@style/devide_line"/>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dimen_10_dp"
+                android:layout_marginTop="@dimen/dimen_10_dp"
+                android:orientation="horizontal"
+                >
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:text="@string/regiest_agreemrnt"
+                        android:textColor="@color/colorButtonDisable"
+                        android:textSize="@dimen/text_size_12"/>
+
+                    <TextView
+                        android:id="@+id/tv_agreement"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/regiest_agreemrnt_name"
+                        android:textColor="@color/commonColor"
+                        android:textSize="@dimen/text_size_12"/>
+
+                    <ImageView
+                        android:id="@+id/iv_agreement"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:src="@drawable/register_agreement_check"
+                        android:visibility="gone"/>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/btn_register"
+                style="@style/btn_login"
+                android:layout_marginTop="40dp"
+                android:text="@string/register_and_login"/>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

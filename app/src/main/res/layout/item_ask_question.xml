@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/rel_ask_question"
+    android:background="@color/colorWhite"
+    android:layout_marginBottom="@dimen/dimen_10_dp"
+    android:padding="@dimen/dp_10">
+
+    <TextView
+        android:id="@+id/tv_ask_question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/dp_10"
+        android:layout_toLeftOf="@+id/iv_ask_question"
+        android:text="hahah"
+        android:textColor="@color/color_text_nomal"
+        android:textSize="@dimen/text_size_16" />
+
+    <ImageView
+        android:id="@+id/iv_ask_question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@mipmap/icon_ask_qustion_unask" />
+
+
+</RelativeLayout>

@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.diting.pingxingren.custom.TitleBarView
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_48_dp"
+        android:background="@color/colorWhite"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:id="@+id/llBack"
+            android:layout_width="@dimen/dimen_30_dp"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/ivBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_12_dp"
+                android:layout_marginStart="@dimen/dimen_12_dp"
+                android:src="@drawable/ic_back" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/title_general"
+            android:textColor="@color/color_text_title"
+            android:textSize="@dimen/text_size_20" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/rlVisitorsManage"
+                style="@style/info_layout"
+                android:layout_marginTop="@dimen/dimen_10_dp">
+
+                <TextView
+                    style="@style/item_info_tv"
+                    android:drawableLeft="@mipmap/icon_company_name"
+                    android:text="@string/general_visitors" />
+
+                <ImageView style="@style/item_info_iv" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlMail"
+                style="@style/info_layout"
+                android:layout_marginTop="@dimen/dimen_1_dp">
+
+                <TextView
+                    android:id="@+id/tv_mail"
+                    style="@style/item_info_tv"
+                    android:drawableLeft="@mipmap/icon_mail"
+                    android:text="@string/general_mail" />
+
+                <TextView
+                    android:id="@+id/tv_mail_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/tv_mail"
+                    android:textColor="@android:color/holo_red_light" />
+
+                <Button
+                    android:id="@+id/btn_mail_redpoint"
+                    android:layout_width="@dimen/dimen_50_dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="10dp"
+
+                    android:layout_toLeftOf="@id/iv_mail"
+                    android:visibility="invisible" />
+
+                <ImageView
+                    android:id="@+id/iv_mail"
+                    style="@style/item_info_iv" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlAuthoritySetting"
+                style="@style/info_layout"
+                android:layout_marginTop="@dimen/dimen_10_dp">
+
+                <TextView
+                    style="@style/item_info_tv"
+                    android:drawableLeft="@mipmap/icon_secrecy"
+                    android:text="@string/general_authority" />
+
+                <ImageView style="@style/item_info_iv" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlCallLog"
+                style="@style/info_layout"
+                android:layout_marginTop="@dimen/dimen_1_dp">
+
+                <TextView
+                    style="@style/item_info_tv"
+                    android:drawableLeft="@mipmap/icon_call_log"
+                    android:text="@string/general_call_logs" />
+
+                <ImageView style="@style/item_info_iv" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlFontSize"
+                style="@style/info_layout"
+                android:layout_marginTop="@dimen/dimen_10_dp">
+
+                <TextView
+                    style="@style/item_info_tv"
+                    android:drawableLeft="@drawable/ic_font_size"
+                    android:text="@string/general_font_size" />
+
+                <ImageView style="@style/item_info_iv" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlBindThird"
+                style="@style/info_layout"
+                android:layout_marginTop="@dimen/dimen_10_dp">
+
+                <TextView
+                    style="@style/item_info_tv"
+                    android:drawableLeft="@drawable/ic_font_size"
+                    android:text="@string/bind_third" />
+
+                <ImageView style="@style/item_info_iv" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/rlUpdatePassword"
+                style="@style/info_layout"
+                android:layout_marginTop="@dimen/dimen_10_dp">
+
+                <TextView
+                    style="@style/item_info_tv"
+                    android:drawableLeft="@mipmap/icon_password"
+                    android:text="@string/general_update_pass" />
+
+                <ImageView style="@style/item_info_iv" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlFeedback"
+                style="@style/info_layout"
+                android:layout_marginTop="@dimen/dimen_1_dp">
+
+                <TextView
+                    style="@style/item_info_tv"
+                    android:drawableLeft="@mipmap/icon_feedback"
+                    android:text="@string/general_feedback" />
+
+                <ImageView style="@style/item_info_iv" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlUpdateVersion"
+                style="@style/info_layout"
+                android:layout_marginTop="@dimen/dimen_1_dp">
+
+                <TextView
+                    style="@style/item_info_tv"
+                    android:drawableLeft="@mipmap/icon_about_diting"
+                    android:text="@string/general_update_version" />
+
+                <ImageView style="@style/item_info_iv" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlLogout"
+                style="@style/info_layout"
+                android:layout_marginTop="@dimen/dimen_1_dp">
+
+                <TextView
+                    style="@style/item_info_tv"
+                    android:drawableLeft="@drawable/ic_logout"
+                    android:text="@string/general_logout" />
+
+                <ImageView style="@style/item_info_iv" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <!--<RelativeLayout
+        android:id="@+id/rl_invalid_question"
+        style="@style/info_layout"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            style="@style/item_info_tv"
+            android:drawableLeft="@mipmap/icon_invalid_question"
+            android:text="@string/tv_invalid_question"/>
+
+        <ImageView style="@style/item_info_iv"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_balance_search"
+        style="@style/info_layout"
+        android:layout_marginTop="1dp"
+        android:visibility="gone">
+
+        <TextView
+            style="@style/item_info_tv"
+            android:drawableLeft="@mipmap/icon_balance_search"
+            android:text="@string/balance_search"/>
+
+        <ImageView style="@style/item_info_iv"/>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_logout"
+        style="@style/btn_login"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/logout"/>-->
+</LinearLayout>

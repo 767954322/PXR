@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="industry_list">
+        <item>IT/互联网</item>
+        <item>文化/体育</item>
+        <item>音乐/娱乐</item>
+        <item>酒店/餐饮</item>
+        <item>旅游</item>
+        <item>贸易/零售</item>
+        <item>法律/金融/咨询服务</item>
+        <item>教育</item>
+        <item>政府/非营利机构</item>
+        <item>医疗/保健</item>
+        <item>房地产建筑</item>
+        <item>加工/制造</item>
+        <item>其他</item>
+    </string-array>
+</resources>

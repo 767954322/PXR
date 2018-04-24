@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="news_main_tab_text">
+        <item>综合</item>
+        <item>国内</item>
+        <item>国际</item>
+        <item>社会</item>
+    </string-array>
+
+    <string-array name="article_months">
+        <item>"2018年1月,2018-01"</item>
+        <item>"2018年2月,2018-02"</item>
+        <item>"2018年3月,2018-03"</item>
+        <item>"2018年4月,2018-04"</item>
+        <item>"2018年5月,2018-05"</item>
+        <item>"2018年6月,2018-06"</item>
+        <item>"2018年7月,2018-07"</item>
+        <item>"2018年8月,2018-08"</item>
+        <item>"2018年9月,2018-09"</item>
+        <item>"2018年10月,2018-10"</item>
+        <item>"2018年11月,2018-11"</item>
+        <item>"2018年12月,2018-12"</item>
+    </string-array>
+
+    <string-array name="article_operation">
+        <item>"重命名"</item>
+        <item>"移动分类"</item>
+    </string-array>
+
+    <string-array name="article_classification">
+        <item>"我的工作"</item>
+        <item>"我的生活"</item>
+        <item>"我的商务"</item>
+        <item>"我的日记"</item>
+    </string-array>
+</resources>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:descendantFocusability="blocksDescendants"
+              android:paddingBottom="@dimen/dimen_10_dp"
+              android:paddingRight="@dimen/dimen_10_dp">
+
+    <CheckBox
+        android:id="@+id/checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_knowledge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/corner_white_bg"
+        android:padding="@dimen/dimen_5_dp">
+
+        <TextView
+            android:id="@+id/tv_question"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tv_question"
+            android:textColor="@color/color_text_light"
+            android:textSize="@dimen/text_size_18"/>
+
+        <TextView
+            android:id="@+id/tv_question_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_5_dp"
+            android:layout_toRightOf="@+id/tv_question"
+            android:lineSpacingMultiplier="1.2"
+            android:textColor="@color/color_text_deep"
+            android:textSize="@dimen/text_size_18"/>
+
+        <View
+            android:id="@+id/devide_line"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_1_dp"
+            android:layout_alignLeft="@+id/tv_question_content"
+            android:layout_below="@+id/tv_question_content"
+            android:layout_marginTop="@dimen/dimen_5_dp"
+            android:background="@color/devide_line"/>
+
+        <TextView
+            android:id="@+id/tv_answer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/devide_line"
+            android:layout_marginTop="@dimen/dimen_5_dp"
+            android:text="@string/tv_answer"
+            android:textColor="@color/color_text_light"
+            android:textSize="@dimen/text_size_18"/>
+
+        <TextView
+            android:id="@+id/tv_answer_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/devide_line"
+            android:layout_below="@+id/devide_line"
+            android:layout_marginTop="@dimen/dimen_5_dp"
+            android:lineSpacingMultiplier="1.2"
+            android:textColor="@color/color_text_deep"
+            android:textSize="@dimen/text_size_18"/>
+    </RelativeLayout>
+</LinearLayout>

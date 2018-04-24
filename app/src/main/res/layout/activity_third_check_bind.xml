@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <com.diting.pingxingren.custom.TitleBarView
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <RelativeLayout
+        android:id="@+id/rlBindWeiXin"
+        style="@style/info_layout"
+        android:layout_marginTop="@dimen/dimen_10_dp">
+
+        <TextView
+            style="@style/item_info_tv"
+            android:text="@string/wechat"/>
+        <TextView
+            android:id="@+id/tv_bindWeiXin_state"
+            style="@style/item_info_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableRight="@mipmap/icon_arrow_right"
+           />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlBindQQ"
+        style="@style/info_layout"
+        android:layout_marginTop="@dimen/dimen_10_dp">
+
+        <TextView
+            style="@style/item_info_tv"
+            android:text="QQ"/>
+
+        <TextView
+            android:id="@+id/tv_bindQQ_state"
+            style="@style/item_info_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableRight="@mipmap/icon_arrow_right"
+           />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlBindSina"
+        style="@style/info_layout"
+        android:layout_marginTop="@dimen/dimen_10_dp">
+
+        <TextView
+            style="@style/item_info_tv"
+            android:text="微博"/>
+
+        <TextView
+            android:id="@+id/tv_bindSina_state"
+            style="@style/item_info_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableRight="@mipmap/icon_arrow_right"
+       />
+    </RelativeLayout>
+</LinearLayout>

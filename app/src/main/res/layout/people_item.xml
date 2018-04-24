@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/peopleHead"
+        android:layout_width="@dimen/dimen_55_dp"
+        android:layout_height="@dimen/dimen_55_dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dimen_5_dp"
+
+        android:background="@mipmap/xiaoxin"
+        android:visibility="visible"/>
+
+    <ImageView
+        android:id="@+id/peopleHeadDialect"
+        android:layout_width="@dimen/dimen_60_dp"
+        android:layout_height="@dimen/dimen_30_dp"
+        android:layout_below="@+id/peopleHead"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dimen_5_dp"
+        android:background="@mipmap/xiaoxin"/>
+
+    <TextView
+        android:id="@+id/peopleName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/peopleHeadDialect"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dimen_5_dp"
+        android:text="小新"
+        android:textColor="#646464"/>
+
+    <ImageView
+        android:id="@+id/peopleHead_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/peopleHead"
+        android:layout_alignRight="@+id/peopleHead"
+        android:layout_marginLeft="@dimen/dimen_10_dp"
+        android:layout_marginTop="@dimen/dimen_5_dp"
+        android:background="@mipmap/icon_ask_qustion_finish"
+        android:visibility="gone"/>
+
+    <ImageView
+        android:id="@+id/peopleHeadDialect_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/peopleHeadDialect"
+        android:layout_alignRight="@+id/peopleHeadDialect"
+        android:layout_marginLeft="@dimen/dimen_10_dp"
+        android:layout_marginTop="@dimen/dimen_5_dp"
+        android:background="@mipmap/icon_ask_qustion_finish"
+        android:visibility="gone"/>
+</RelativeLayout>

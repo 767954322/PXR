@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/ll_main"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/colorGray"
+              android:gravity="center_horizontal"
+              android:orientation="vertical">
+
+    <com.diting.pingxingren.custom.TitleBarView
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:id="@+id/ll_submenu"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_50_dp"
+        android:layout_marginTop="1dp"
+        android:paddingBottom="@dimen/dimen_5_dp"
+        android:paddingLeft="@dimen/dimen_10_dp"
+        android:paddingRight="@dimen/dimen_10_dp"
+        android:paddingTop="@dimen/dimen_5_dp">
+
+        <LinearLayout
+            android:id="@+id/ll_add_knowledge"
+            android:layout_width="@dimen/dimen_0_dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/send_btn_enable"
+            android:gravity="center">
+            <!--<ImageView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:src="@mipmap/icon_add_knowledge"/>-->
+            <TextView
+                android:id="@+id/tv_add_question"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:drawableLeft="@mipmap/icon_add_knowledge"
+                android:drawablePadding="@dimen/dimen_10_dp"
+                android:text="@string/add_question"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/text_size_16"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_caicai"
+            android:layout_width="@dimen/dimen_0_dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/send_btn_enable"
+            android:gravity="center"
+            android:visibility="gone">
+            <!--<ImageView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:src="@mipmap/icon_caicai"/>-->
+            <TextView
+                android:id="@+id/tv_caicai"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:drawableLeft="@mipmap/icon_caicai"
+                android:drawablePadding="@dimen/dimen_10_dp"
+                android:text="采采"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/text_size_16"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_no_knowledge"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_20_dp"
+            android:src="@mipmap/icon_no_knowledge">
+        </ImageView>
+
+        <TextView
+            android:id="@+id/tv_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_20_dp"
+            android:text="@string/tv_no_knowledge"/>
+    </LinearLayout>
+
+    <com.diting.pingxingren.custom.LoadListView
+        android:id="@+id/lv_knowledge"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@null"
+        android:listSelector="@color/transparent"/>
+
+</LinearLayout>

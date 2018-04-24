@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_margin="@dimen/dimen_15_dp"
+              android:background="@color/colorWhite"
+              android:gravity="center"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/llTreasure"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_140_dp"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <LinearLayout
+            android:id="@+id/rlTreasure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#F3F8FB"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/ivTreasure"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_30_dp"
+                android:layout_marginRight="@dimen/dimen_30_dp"
+                android:layout_marginTop="@dimen/dimen_10_dp"
+                android:layout_marginBottom="@dimen/dimen_10_dp"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvTreasure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_15_dp"/>
+    </LinearLayout>
+</LinearLayout>

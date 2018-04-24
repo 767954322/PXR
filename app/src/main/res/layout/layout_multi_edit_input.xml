@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/id_ll_multi"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/colorWhite"
+              android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/id_et_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:gravity="top"
+        android:hint="请输入文字描述…"
+        android:inputType="textMultiLine"
+        android:paddingLeft="@dimen/dimen_10_dp"
+        android:paddingRight="@dimen/dimen_10_dp"
+        android:paddingTop="@dimen/dimen_10_dp"
+        android:selectAllOnFocus="true"
+        android:textSize="@dimen/text_size_16"/>
+
+    <TextView
+        android:id="@+id/id_tv_input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginBottom="@dimen/dimen_5_dp"
+        android:layout_marginRight="@dimen/dimen_8_dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:text="100/100"/>
+</LinearLayout>

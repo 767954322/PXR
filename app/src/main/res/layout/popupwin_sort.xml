@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:background="@drawable/send_btn_enable"
+              android:orientation="vertical"
+              android:paddingLeft="@dimen/dimen_10_dp"
+              android:paddingRight="@dimen/dimen_5_dp">
+
+    <TextView
+        android:id="@+id/tv_menu1"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dimen_33_dp"
+        android:layout_marginLeft="@dimen/dimen_5_dp"
+        android:layout_marginRight="@dimen/dimen_5_dp"
+        android:drawablePadding="@dimen/dimen_5_dp"
+        android:drawableRight="@mipmap/icon_arrow_down"
+        android:gravity="center_vertical"
+        android:text="问答排序"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/text_size_18"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_1_dp"
+        android:layout_marginRight="@dimen/dimen_5_dp"
+        android:background="@color/colorWhite"/>
+
+    <TextView
+        android:id="@+id/tv_menu2"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dimen_33_dp"
+        android:layout_marginLeft="@dimen/dimen_5_dp"
+        android:layout_marginRight="@dimen/dimen_5_dp"
+        android:gravity="center_vertical"
+        android:text="价值排序"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/text_size_18"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_1_dp"
+        android:layout_marginRight="@dimen/dimen_5_dp"
+        android:background="@color/colorWhite"/>
+
+    <TextView
+        android:id="@+id/tv_menu3"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dimen_33_dp"
+        android:layout_marginLeft="@dimen/dimen_5_dp"
+        android:layout_marginRight="@dimen/dimen_5_dp"
+        android:gravity="center_vertical"
+        android:text="粉丝排序"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/text_size_18"/>
+</LinearLayout>  

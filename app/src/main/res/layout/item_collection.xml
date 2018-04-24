@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/lay_collection"
+    android:layout_margin="@dimen/dimen_5_dp"
+    android:background="@drawable/send_btn_disable_chatting"
+    android:orientation="vertical"
+    android:padding="@dimen/dimen_10_dp">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_from_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginRight="@dimen/dimen_5_dp"
+            android:layout_toLeftOf="@+id/tv_collect_time"
+            android:text=""
+            android:textSize="@dimen/text_size_14" />
+
+        <TextView
+            android:id="@+id/tv_collect_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text=""
+            android:textSize="@dimen/text_size_14" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_1_dp"
+        android:layout_marginBottom="@dimen/dimen_10_dp"
+        android:layout_marginTop="@dimen/dimen_10_dp"
+        android:background="@color/colorRed" />
+
+    <RelativeLayout
+        android:id="@+id/rel_collect_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tv_collect_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="hahahahahahhahahahah" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rel_collect_file"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tv_collect_filename"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@mipmap/icon_collect_file"
+            android:drawablePadding="@dimen/dimen_10_dp"
+            android:text="hahahahahahhahahahah" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rel_collect_video"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/iv_collect_video_image"
+            android:layout_width="@dimen/dimen_60_dp"
+            android:layout_height="@dimen/dimen_45_dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dimen_10_dp"
+            android:src="@mipmap/icon_collect_file" />
+
+        <TextView
+            android:id="@+id/tv_collect_video_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/iv_collect_video_image"
+            android:layout_toRightOf="@+id/iv_collect_video_image"
+            android:text="ahhahahahahahhahahahahahah" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rel_collect_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/iv_collect_image"
+            android:layout_width="@dimen/dimen_60_dp"
+            android:layout_height="@dimen/dimen_45_dp"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/icon_collect_file" />
+
+        <TextView
+            android:id="@+id/tv_collect_image_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/iv_collect_image"
+            android:layout_toRightOf="@+id/iv_collect_image"
+            android:text="ahhahahahahahhahahahahahah" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rel_collect_audio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tv_collect_audioname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@mipmap/icon_collect_audio"
+            android:drawablePadding="@dimen/dimen_10_dp"
+            android:text="hahahahahahhahahahah" />
+    </RelativeLayout>
+</LinearLayout>

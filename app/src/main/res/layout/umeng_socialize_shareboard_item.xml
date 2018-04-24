@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="@dimen/dimen_80_dp"
+                android:layout_height="@dimen/dimen_80_dp"
+                android:background="@drawable/umeng_socialize_shareboard_item_background">
+
+    <ImageView
+        android:id="@+id/umeng_socialize_shareboard_image"
+        android:layout_width="@dimen/dimen_50_dp"
+        android:layout_height="@dimen/dimen_50_dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dimen_10_dp"
+        android:scaleType="fitXY"/>
+
+    <TextView
+        android:id="@+id/umeng_socialize_shareboard_pltform_name"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dimen_20_dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/dimen_5_dp"
+        android:layout_marginLeft="@dimen/dimen_2_dp"
+        android:layout_marginRight="@dimen/dimen_2_dp"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="@string/qq_zone"
+        android:textSize="@dimen/text_size_12"/>
+</RelativeLayout>

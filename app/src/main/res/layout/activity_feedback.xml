@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/ll_main"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/colorGray"
+              android:orientation="vertical">
+
+    <com.diting.pingxingren.custom.TitleBarView
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </com.diting.pingxingren.custom.TitleBarView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:paddingTop="@dimen/dp_10"
+        android:paddingLeft="@dimen/dimen_10_dp"
+        android:paddingBottom="@dimen/dimen_10_dp"
+        android:text="@string/tv_feedback_content"
+        android:textColor="@color/color_text_title"
+        android:textSize="@dimen/text_size_16"/>
+
+    <com.diting.pingxingren.custom.MultiEditInputView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/et_feedback_content"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_200_dp"
+        android:background="@color/colorWhite"
+        android:padding="@dimen/dimen_5_dp"
+        app:contentHeight="@dimen/dimen_160_dp"
+        app:hintText="@string/ed_feedback_content_hint"
+        app:maxCount="150" />
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/dimen_10_dp"
+    android:textSize="@dimen/text_size_12"
+    android:text="@string/text_feedback_tip"/>
+    <Button
+        android:id="@+id/feedback"
+        style="@style/btn_login"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="@dimen/dimen_30_dp"
+        android:layout_marginRight="@dimen/dimen_30_dp"
+        android:layout_marginTop="@dimen/dimen_50_dp"
+        android:text="@string/commit"/>
+</LinearLayout>
